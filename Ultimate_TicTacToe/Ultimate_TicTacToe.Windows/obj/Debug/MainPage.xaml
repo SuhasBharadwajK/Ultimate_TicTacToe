@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Ultimate_TicTacToe.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ultimate_TicTacToe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.553,0.503">
+        <Image x:Name="MainGrid" HorizontalAlignment="Left" Height="707" Margin="328,29,0,0" VerticalAlignment="Top" Width="735" Source="Assets/TicTacToe Grid_2100x2100_thick_Red.png" RenderTransformOrigin="0.505,0.492"/>
+
+        <Image x:Name="Grid_1x1" HorizontalAlignment="Left" Height="238" Margin="328,29,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_1x2" HorizontalAlignment="Left" Height="238" Margin="575,29,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_1x3" HorizontalAlignment="Left" Height="238" Margin="826,29,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_2x1" HorizontalAlignment="Left" Height="238" Margin="328,280,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_2x2" HorizontalAlignment="Left" Height="238" Margin="576,280,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_2x3" HorizontalAlignment="Left" Height="238" Margin="826,280,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_3x1" HorizontalAlignment="Left" Height="238" Margin="328,523,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_3x2" HorizontalAlignment="Left" Height="238" Margin="576,523,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <Image x:Name="Grid_3x3" HorizontalAlignment="Left" Height="238" Margin="826,523,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png"/>
+        <TextBlock x:ConnectionId='1' x:Name="TextBlock_1x1" HorizontalAlignment="Left" Margin="334,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"                                                                             FontSize="50" Text="X" TextAlignment="Center"/>
+
+    </Grid>
+</Page>
+

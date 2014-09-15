@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SUHAS-PC</Machine>
+    <WindowsUser>Suhas</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>16e444b0-d7db-4439-8575-6778b9f6ea56</PackageIdentityName>
+    <IntermediateOutputPath>c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>D20F27BDF0A98E1F1CA11562D21483668126BD17C0762CDD3E340729EA18D94F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>16e444b0-d7db-4439-8575-6778b9f6ea56_1.0.0.0_neutral__evbpqqwrht6rp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>16e444b0-d7db-4439-8575-6778b9f6ea56_evbpqqwrht6rp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>16e444b0-d7db-4439-8575-6778b9f6ea56</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Suhas</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-15T16:40:14.785</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
+      <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
+      <Modified>2014-09-15T17:44:46.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-12T15:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-12T15:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-12T15:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-12T15:36:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Blue.png">
+      <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Blue.png</PackagePath>
+      <Modified>2014-09-15T17:35:31.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Indigo.png">
+      <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Indigo.png</PackagePath>
+      <Modified>2014-09-15T16:38:51.771</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Pink.png">
+      <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Pink.png</PackagePath>
+      <Modified>2014-09-15T16:38:51.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Red.png">
+      <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Red.png</PackagePath>
+      <Modified>2014-09-15T16:38:51.717</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-09-15T16:40:12.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-09-15T17:44:45.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
+      <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
+      <Modified>2014-09-15T17:44:45.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-09-15T16:40:13.937</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
