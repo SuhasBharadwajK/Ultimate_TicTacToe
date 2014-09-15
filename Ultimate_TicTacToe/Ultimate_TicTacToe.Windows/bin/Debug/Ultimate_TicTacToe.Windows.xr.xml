@@ -30,7 +30,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextAlignment" />
-      <RootEvent Name="Tapped" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Ultimate_TicTacToe.MainPage" />

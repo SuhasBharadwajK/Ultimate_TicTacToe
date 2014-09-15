@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
       <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
-      <Modified>2014-09-15T18:18:50.066</Modified>
+      <Modified>2014-09-15T18:39:11.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -70,11 +70,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-09-15T18:18:49.685</Modified>
+      <Modified>2014-09-15T18:39:11.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
       <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
-      <Modified>2014-09-15T17:44:45.979</Modified>
+      <Modified>2014-09-15T18:39:11.331</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
