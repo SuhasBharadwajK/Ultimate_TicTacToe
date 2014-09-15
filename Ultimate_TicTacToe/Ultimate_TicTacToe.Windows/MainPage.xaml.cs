@@ -29,7 +29,7 @@ namespace Ultimate_TicTacToe
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            TextBlock_1x1.Text = "O";
+            TextBlock_1x1_1x1.Text = "O";
         }
 
         private void TextBlock_1x1_SelectionChanged(object sender, RoutedEventArgs e)
