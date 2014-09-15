@@ -29,10 +29,34 @@ namespace Ultimate_TicTacToe
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            TextBlock_1x1_1x1.Text = "O";
+            //this.FindName("TextBlock_1x1_1x1").Text = "O";
+            //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "";
         }
 
         private void TextBlock_1x1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButtonX_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    for (int k = 1; k <= 3; k++)
+                    {
+                        for (int l = 1; l <= 3; l++)
+                        {
+                            ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i.ToString() + "x" + j.ToString() + "_" + k.ToString() + "x" + l.ToString())).Text = "X";
+                        }
+                    }
+                }
+            }
+            //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "X";
+        }
+
+        private void ButtonY_Click(object sender, RoutedEventArgs e)
         {
 
         }

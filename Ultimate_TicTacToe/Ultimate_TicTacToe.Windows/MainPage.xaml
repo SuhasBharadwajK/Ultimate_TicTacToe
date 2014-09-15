@@ -86,7 +86,7 @@
         <TextBlock x:Name="TextBlock_3x2_1x3" HorizontalAlignment="Left" Margin="737,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x2_2x1" HorizontalAlignment="Left" Margin="582,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x2_2x2" HorizontalAlignment="Left" Margin="663,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
-        <TextBlock x:Name="TextBlock_3x2_2x4" HorizontalAlignment="Left" Margin="737,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlock_3x2_2x3" HorizontalAlignment="Left" Margin="737,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x2_3x1" HorizontalAlignment="Left" Margin="582,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x2_3x2" HorizontalAlignment="Left" Margin="663,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x2_3x3" HorizontalAlignment="Left" Margin="737,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
@@ -96,10 +96,12 @@
         <TextBlock x:Name="TextBlock_3x3_1x3" HorizontalAlignment="Left" Margin="985,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x3_2x1" HorizontalAlignment="Left" Margin="830,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x3_2x2" HorizontalAlignment="Left" Margin="911,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
-        <TextBlock x:Name="TextBlock_3x3_2x4" HorizontalAlignment="Left" Margin="985,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
+        <TextBlock x:Name="TextBlock_3x3_2x3" HorizontalAlignment="Left" Margin="985,613,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x3_3x1" HorizontalAlignment="Left" Margin="830,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x3_3x2" HorizontalAlignment="Left" Margin="911,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
         <TextBlock x:Name="TextBlock_3x3_3x3" HorizontalAlignment="Left" Margin="985,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"  SelectionChanged="TextBlock_1x1_SelectionChanged" FontSize="50" Text="" TextAlignment="Center"/>
+        <Button x:Name="ButtonX" Content="X" HorizontalAlignment="Left" Margin="110,192,0,0" VerticalAlignment="Top" Click="ButtonX_Click"/>
+        <Button x:Name="ButtonY" Content="O" HorizontalAlignment="Left" Margin="110,364,0,0" VerticalAlignment="Top" Click="ButtonY_Click"/>
 
     </Grid>
 </Page>
