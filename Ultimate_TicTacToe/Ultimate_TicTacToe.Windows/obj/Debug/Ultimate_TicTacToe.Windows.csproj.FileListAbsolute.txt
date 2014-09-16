@@ -30,3 +30,35 @@ c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate
 c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\qualifiers.txt.intermediate
 c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\App.xbf
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.pdb
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.build.appxrecipe
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\App.g.i.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\App.g.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MainPage.g.i.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MainPage.g.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\App.xaml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\App.xbf
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MainPage.xaml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MainPage.xbf
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\Ultimate_TicTacToe.Windows.exe
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\Ultimate_TicTacToe.Windows.pdb
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\priconfig.xml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\priconfig.xml.intermediate
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\layout.resfiles
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\layout.resfiles.intermediate
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\resources.resfiles
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\resources.resfiles.intermediate
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\pri.resfiles
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\pri.resfiles.intermediate
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\qualifiers.txt
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\ProjectArchitectures.txt
