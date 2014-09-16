@@ -34,6 +34,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Text" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="Tapped" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
