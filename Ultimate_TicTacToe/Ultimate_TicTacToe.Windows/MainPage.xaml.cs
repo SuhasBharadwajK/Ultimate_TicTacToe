@@ -27,7 +27,10 @@ namespace Ultimate_TicTacToe
         public MainPage()
         {
             this.InitializeComponent();
+            //Highlight_Button.Click += delegate(object sender, RoutedEventArgs e) { Highlight_Button_Click(sender, e, 1); };
         }
+
+        int pen;
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -57,7 +60,9 @@ namespace Ultimate_TicTacToe
             }*/
             //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "X";
             ButtonY.IsEnabled = false;
-            Play(1);
+            pen = 1;
+            var info = ((Button)e.OriginalSource).DataContext;
+            TestTextBox.Text = info.ToString();
         }
 
         private void ButtonY_Click(object sender, RoutedEventArgs e)
@@ -76,16 +81,21 @@ namespace Ultimate_TicTacToe
                 }
             }*/
             ButtonX.IsEnabled = false;
-            Play(2);
+            pen = 2;
         }
 
-        private void Highlight_Button_Click(object sender, RoutedEventArgs e)
+        private void Highlight_Button_Click(object sender, RoutedEventArgs e) //Remove this
         {
             //SolidColorBrush brushRectangle = new SolidColorBrush();
             //brushRectangle.Color = Color.FromArgb(225, 100, 100, 100);
             //RectHigh.Fill = brushRectangle;
             Back_1x1.Opacity = 0.15;
+            var value = ((Button)sender).Tag;
+            var button = sender as Button;
+            //var code = ((Button)sender).
+            TestTextBox.Text = (value.ToString()).Substring(2,1);
         }
+
         public void Play( int pen )
         {
             int counter = 0;
@@ -99,13 +109,126 @@ namespace Ultimate_TicTacToe
             }
         }
 
+        public void NullifyAll()
+        {
+            for (int i = 1; i <= 3; i++)
+                for (int j = 1; j <= 3; j++)
+                {
+                    ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).IsTapEnabled = false;
+                }
+        }
+
+        public void Activate(int p, int q)
+        {
+            for (int i = 1; i <= 3; i++)
+                for (int j = 1; j <= 3; j++)
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).IsTapEnabled = true;
+        }
+
         private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //ButtonX.Content = "Works!";
             //SetZIndex();
             //Back_3x3.
-            Canvas.SetZIndex(Back_3x3, 4);
-            ButtonY.Content = (Canvas.GetZIndex(Back_3x3)).ToString();
+            Canvas.SetZIndex(Back_3x3, 0);
+            //ButtonY.Content = (Canvas.GetZIndex(Back_3x3)).ToString();
+            Play(pen);
+        }
+
+        private void Back_1x1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_1x1, 0);
+            Play(pen);
+        }
+
+        private void Back_1x2_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_1x2, 0);
+            Play(pen);
+        }
+
+        private void Back_1x3_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_1x3, 0);
+            Play(pen);
+        }
+
+        private void Back_2x1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_2x1, 0);
+            Play(pen);
+        }
+
+        private void Back_2x2_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_2x2, 0);
+            Play(pen);
+        }
+
+        private void Back_2x3_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_2x3, 0);
+            Play(pen);
+        }
+
+        private void Back_3x1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_3x1, 0);
+            Play(pen);
+        }
+
+        private void Back_3x2_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Canvas.SetZIndex(Back_3x2, 0);
+            Play(pen);
+            var info = ((Windows.UI.Xaml.Shapes.Rectangle)e.OriginalSource).DataContext;
+            //TestTextBox.Text = info.ToString();
+            //ButtonX.Content = info.ToString();
+        }
+
+        private void TextBlock_1x1_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_1x2_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_1x3_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_2x1_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_2x2_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_2x3_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_3x1_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_3x2_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
+        }
+
+        private void TextBlock_3x3_Tapped(object sender, TappedEventHandler e, int p, int q)
+        {
+
         }
     }
 }

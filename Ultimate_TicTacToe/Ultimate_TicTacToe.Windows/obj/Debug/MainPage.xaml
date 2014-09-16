@@ -103,16 +103,17 @@
         <TextBlock x:ConnectionId='81' x:Name="TextBlock_3x3_3x3" HorizontalAlignment="Left" Margin="985,691,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"                                                    FontSize="50" Text="" TextAlignment="Center" Canvas.ZIndex="3"/>
         <Button x:ConnectionId='82' x:Name="ButtonX" Content="X" HorizontalAlignment="Left" Margin="110,192,0,0" VerticalAlignment="Top"                      />
         <Button x:ConnectionId='83' x:Name="ButtonY" Content="O" HorizontalAlignment="Left" Margin="110,364,0,0" VerticalAlignment="Top"                      />
-        <Button x:ConnectionId='84' x:Name="Highlight_Button" Content="Highlight" HorizontalAlignment="Left" Margin="1228,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1,0.763"                               />
-        <Rectangle x:ConnectionId='85' x:Name="Back_3x3" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="824,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"                          Canvas.ZIndex="5"/>
-        <Rectangle x:Name="Back_3x2" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="579,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
-        <Rectangle x:Name="Back_3x1" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="332,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-        <Rectangle x:Name="Back_2x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-        <Rectangle x:Name="Back_2x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
-        <Rectangle x:Name="Back_2x1" Fill="#46cedb" HorizontalAlignment="Left" Height="229" Margin="334,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
-        <Rectangle x:Name="Back_1x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-        <Rectangle x:Name="Back_1x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
-        <Rectangle x:Name="Back_1x1" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
+        <Button x:ConnectionId='84' x:Name="Highlight_Button" Content="Highlight" HorizontalAlignment="Left" Margin="1228,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1,0.763"                                Tag="3 3"/>
+        <Rectangle x:ConnectionId='85' x:Name="Back_3x3" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="824,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"                          Canvas.ZIndex="10"/>
+        <Rectangle x:ConnectionId='86' x:Name="Back_3x2" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="579,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='87' x:Name="Back_3x1" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="332,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='88' x:Name="Back_2x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='89' x:Name="Back_2x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='90' x:Name="Back_2x1" Fill="#46cedb" HorizontalAlignment="Left" Height="229" Margin="334,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='91' x:Name="Back_1x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='92' x:Name="Back_1x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0" Canvas.ZIndex="10"                         />
+        <Rectangle x:ConnectionId='93' x:Name="Back_1x1" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Canvas.ZIndex="10"                         />
+        <TextBox x:Name="TestTextBox" HorizontalAlignment="Left" Margin="1182,563,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
