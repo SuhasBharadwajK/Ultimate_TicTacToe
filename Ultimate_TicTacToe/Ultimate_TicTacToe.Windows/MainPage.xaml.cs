@@ -15,7 +15,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Ultimate_TicTacToe
@@ -96,13 +95,17 @@ namespace Ultimate_TicTacToe
             }
             else
             {
-
+                //(global::Windows.UI.Xaml.Controls.Canvas)
             }
         }
 
         private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ButtonX.Content = "Works!";
+            //ButtonX.Content = "Works!";
+            //SetZIndex();
+            //Back_3x3.
+            Canvas.SetZIndex(Back_3x3, 4);
+            ButtonY.Content = (Canvas.GetZIndex(Back_3x3)).ToString();
         }
     }
 }
