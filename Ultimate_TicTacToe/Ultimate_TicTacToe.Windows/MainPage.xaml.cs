@@ -58,7 +58,7 @@ namespace Ultimate_TicTacToe
             }*/
             //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "X";
             ButtonY.IsEnabled = false;
-            int pen = 1;
+            Play(1);
         }
 
         private void ButtonY_Click(object sender, RoutedEventArgs e)
@@ -77,7 +77,7 @@ namespace Ultimate_TicTacToe
                 }
             }*/
             ButtonX.IsEnabled = false;
-            int pen = 2;
+            Play(2);
         }
 
         private void Highlight_Button_Click(object sender, RoutedEventArgs e)
@@ -86,6 +86,23 @@ namespace Ultimate_TicTacToe
             //brushRectangle.Color = Color.FromArgb(225, 100, 100, 100);
             //RectHigh.Fill = brushRectangle;
             Back_1x1.Opacity = 0.15;
+        }
+        public void Play( int pen )
+        {
+            int counter = 0;
+            if (pen == 1)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ButtonX.Content = "Works!";
         }
     }
 }

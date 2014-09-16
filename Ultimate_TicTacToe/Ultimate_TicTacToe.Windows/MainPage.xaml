@@ -8,23 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.518">
-        <Rectangle x:Name="Back_3x3" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="824,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-
-        <Rectangle x:Name="Back_3x2" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="579,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
-
-        <Rectangle x:Name="Back_3x1" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="332,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-
-        <Rectangle x:Name="Back_2x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-
-        <Rectangle x:Name="Back_2x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
-
-        <Rectangle x:Name="Back_2x1" Fill="#46cedb" HorizontalAlignment="Left" Height="229" Margin="334,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
-
-        <Rectangle x:Name="Back_1x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
-
-        <Rectangle x:Name="Back_1x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
-
-        <Rectangle x:Name="Back_1x1" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
 
         <Image x:Name="MainGrid" HorizontalAlignment="Left" Height="707" Margin="328,29,0,0" VerticalAlignment="Top" Width="735" Source="Assets/TicTacToe Grid_2100x2100_thick_Red.png" RenderTransformOrigin="0.505,0.492"/>
 
@@ -121,6 +104,15 @@
         <Button x:Name="ButtonX" Content="X" HorizontalAlignment="Left" Margin="110,192,0,0" VerticalAlignment="Top" Click="ButtonX_Click"/>
         <Button x:Name="ButtonY" Content="O" HorizontalAlignment="Left" Margin="110,364,0,0" VerticalAlignment="Top" Click="ButtonY_Click"/>
         <Button x:Name="Highlight_Button" Content="Highlight" HorizontalAlignment="Left" Margin="1228,309,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1,0.763" Click="Highlight_Button_Click"/>
+        <Rectangle x:Name="Back_3x3" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="824,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Tapped="Back_3x3_Tapped"/>
+        <Rectangle x:Name="Back_3x2" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="579,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
+        <Rectangle x:Name="Back_3x1" Fill="#46cedb" HorizontalAlignment="Left" Height="207" Margin="332,525,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
+        <Rectangle x:Name="Back_2x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
+        <Rectangle x:Name="Back_2x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" Opacity="0"/>
+        <Rectangle x:Name="Back_2x1" Fill="#46cedb" HorizontalAlignment="Left" Height="229" Margin="334,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
+        <Rectangle x:Name="Back_1x3" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="824,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
+        <Rectangle x:Name="Back_1x2" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"/>
+        <Rectangle x:Name="Back_1x1" Fill="#46cedb" HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"/>
 
     </Grid>
 </Page>
