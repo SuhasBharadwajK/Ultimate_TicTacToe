@@ -31,7 +31,7 @@ namespace Ultimate_TicTacToe
         }
 
         //int pen;
-        string pen;
+        string pen = "";
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -59,30 +59,33 @@ namespace Ultimate_TicTacToe
                     }
                 }
             }*/
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
+                }
+            }
             //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "X";
             ButtonY.IsEnabled = false;
             pen = "X";
             //var info = ((Button)e.OriginalSource).DataContext;
             //TestTextBox.Text = info.ToString();
+            ButtonX.IsEnabled = false;
         }
 
         private void ButtonY_Click(object sender, RoutedEventArgs e)
         {
-            /*for (int i = 1; i <= 3; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 for (int j = 1; j <= 3; j++)
                 {
-                    for (int k = 1; k <= 3; k++)
-                    {
-                        for (int l = 1; l <= 3; l++)
-                        {
-                            ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i.ToString() + "x" + j.ToString() + "_" + k.ToString() + "x" + l.ToString())).Text = "O";
-                        }
-                    }
+                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
                 }
-            }*/
+            }
             ButtonX.IsEnabled = false;
             pen = "O";
+            ButtonY.IsEnabled = false;
         }
 
         private void Highlight_Button_Click(object sender, RoutedEventArgs e) //Remove this
@@ -97,7 +100,7 @@ namespace Ultimate_TicTacToe
             TestTextBox.Text = (value.ToString()).Substring(0,10);
         }
 
-        public void Play( string pen )
+        public void Play( string pen ) //Useless function
         {
             //int counter = 0;
             if (pen == "X")
@@ -110,7 +113,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void NullifyAll()
+        public void NullifyAll( int p, int q )
         {
             for (int i = 1; i <= 3; i++)
                 for (int j = 1; j <= 3; j++)
@@ -118,11 +121,25 @@ namespace Ultimate_TicTacToe
                     ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).IsTapEnabled = false;
                     Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 0);
                 }
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3 ; j++)
+                {
+                    for (int k = 1; k <= 3; k++)
+                    {
+                        for (int l = 1; l <= 3; l++)
+                        {
+                            //if(i != p && j != q)
+                                ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).IsTapEnabled = false;
+                        }
+                    }
+                }
+            }
         }
 
         public void Activate(int p, int q)
         {
-            NullifyAll();
+            NullifyAll(p, q);
             for (int i = 1; i <= 3; i++)
                 for (int j = 1; j <= 3; j++)
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).IsTapEnabled = true;
@@ -207,49 +224,74 @@ namespace Ultimate_TicTacToe
         {
             //14 16
             var info = ((TextBlock)sender).Name;
-            string r = info.Substring(14, 1);
-            string s = info.Substring(16, 1);
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x1")).Text = pen;
         }
 
         private void TextBlock_1x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x2")).Text = pen;
         }
 
         private void TextBlock_1x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x3")).Text = pen;
+            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x3_" + r + "x" + s)).Text = pen;
         }
 
         private void TextBlock_2x1_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x1")).Text = pen;
         }
 
         private void TextBlock_2x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_2x2")).Text = pen;
         }
 
         private void TextBlock_2x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x3")).Text = pen;
         }
 
         private void TextBlock_3x1_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x1")).Text = pen;
         }
 
         private void TextBlock_3x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x2")).Text = pen;
         }
 
         private void TextBlock_3x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var info = ((TextBlock)sender).Name;
+            string r = info.Substring(10, 1);
+            string s = info.Substring(12, 1);
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x3")).Text = pen;
         }
     }
 }
