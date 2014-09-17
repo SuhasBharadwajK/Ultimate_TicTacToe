@@ -62,3 +62,8 @@ C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ult
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\ProjectArchitectures.txt
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.g.cs
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xaml
+C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xbf

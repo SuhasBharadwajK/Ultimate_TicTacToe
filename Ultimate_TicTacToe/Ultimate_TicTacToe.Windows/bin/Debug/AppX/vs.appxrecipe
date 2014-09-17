@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-16T17:07:00.973</Modified>
+      <Modified>2014-09-17T11:14:04.540</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
       <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
-      <Modified>2014-09-17T10:26:41.820</Modified>
+      <Modified>2014-09-17T16:53:27.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -68,17 +68,21 @@
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-09-16T12:08:44.159</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+      <Modified>2014-09-17T16:36:48.992</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-09-17T10:07:08.552</Modified>
+      <Modified>2014-09-17T16:36:48.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
       <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
-      <Modified>2014-09-16T20:32:41.652</Modified>
+      <Modified>2014-09-17T11:14:02.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-16T17:07:00.213</Modified>
+      <Modified>2014-09-17T11:14:03.886</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -27,11 +27,47 @@ namespace Ultimate_TicTacToe
         public MainPage()
         {
             this.InitializeComponent();
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    for (int k = 1; k <= 3; k++)
+                    {
+                        for (int l = 1; l <= 3; l++)
+                        {
+                            ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).IsTapEnabled = false;
+                        }
+                    }
+                }
+            }
+            /*Loaded += (s, e) =>
+            {
+                Back_1x1.IsTapEnabled = false;
+                Back_1x2.IsTapEnabled = false;
+                Back_1x3.IsTapEnabled = false;
+                Back_2x1.IsTapEnabled = false;
+                Back_2x2.IsTapEnabled = false;
+                Back_2x3.IsTapEnabled = false;
+                Back_3x1.IsTapEnabled = false;
+                Back_3x2.IsTapEnabled = false;
+                Back_3x3.IsTapEnabled = false;
+            };*/
+            /*ButtonX.IsEnabled = false;
+            Back_1x1.IsTapEnabled = false;
+            Back_1x2.IsTapEnabled = false;
+            Back_1x3.IsTapEnabled = false;
+            Back_2x1.IsTapEnabled = false;
+            Back_2x2.IsTapEnabled = false;
+            Back_2x3.IsTapEnabled = false;
+            Back_3x1.IsTapEnabled = false;
+            Back_3x2.IsTapEnabled = false;
+            Back_3x3.IsTapEnabled = false;*/
             //Highlight_Button.Click += delegate(object sender, RoutedEventArgs e) { Highlight_Button_Click(sender, e, 1); };
         }
 
         //int pen;
         string pen = "";
+        int counter = 0;
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -41,6 +77,7 @@ namespace Ultimate_TicTacToe
 
         private void TextBlock_1x1_SelectionChanged(object sender, RoutedEventArgs e)
         {
+
 
         }
 
@@ -95,7 +132,7 @@ namespace Ultimate_TicTacToe
             //RectHigh.Fill = brushRectangle;
             Back_1x1.Opacity = 0.15;
             var value = ((Button)sender).Name;
-            var button = sender as Button;
+            //var button = sender as Button;//
             //var code = ((Button)sender).
             TestTextBox.Text = (value.ToString()).Substring(0,10);
         }
@@ -137,12 +174,35 @@ namespace Ultimate_TicTacToe
             }
         }
 
+        public void Played( )
+        {
+            counter++;
+            if (pen == "X")
+            {
+                pen = "O";
+            }
+            else
+            {
+                pen = "X";
+            }
+        }
+
+        public void Transfer(int r, int s, int p, int q)
+        {
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).IsTapEnabled = true;
+            Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)), 0);
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0.15;
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + q)).IsTapEnabled = false;
+            Activate(p, q);
+        }
+
         public void Activate(int p, int q)
         {
             NullifyAll(p, q);
             for (int i = 1; i <= 3; i++)
                 for (int j = 1; j <= 3; j++)
-                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).IsTapEnabled = true;
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).Text == "")
+                        ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).IsTapEnabled = true;
         }
 
         private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -215,10 +275,10 @@ namespace Ultimate_TicTacToe
             //ButtonX.Content = info.ToString();
         }
 
-        public void Played(int p, int q, int r, int s)
+        /*public void Played(int p, int q, int r, int s)
         {
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + r + "x" + s)).Text = pen;
-        }
+        }*/
 
         private void TextBlock_1x1_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -227,6 +287,13 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x1")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 1, 1);
+            Played();
+            //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).IsTapEnabled = true;
+            //Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)), 0);
+            //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0.15;
+            //Activate(Int32.Parse(r), Int32.Parse(s));
         }
 
         private void TextBlock_1x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -235,6 +302,10 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x2")).Text = pen;
+            //Transfer(Int32.Parse(r), Int32.Parse(s));
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 1, 2);
+            Played();
         }
 
         private void TextBlock_1x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -244,6 +315,9 @@ namespace Ultimate_TicTacToe
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x3")).Text = pen;
             //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x3_" + r + "x" + s)).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 1, 3);
+            Played();
         }
 
         private void TextBlock_2x1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -252,6 +326,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x1")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 2, 1);
+            Played();
         }
 
         private void TextBlock_2x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -260,6 +337,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_2x2")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 2, 2);
+            Played();
         }
 
         private void TextBlock_2x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -268,6 +348,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x3")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 2, 3);
+            Played();
         }
 
         private void TextBlock_3x1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -276,6 +359,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x1")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 3, 1);
+            Played();
         }
 
         private void TextBlock_3x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -284,6 +370,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x2")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 3, 2);
+            Played();
         }
 
         private void TextBlock_3x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -292,6 +381,9 @@ namespace Ultimate_TicTacToe
             string r = info.Substring(10, 1);
             string s = info.Substring(12, 1);
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x3")).Text = pen;
+            ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
+            Transfer(Int32.Parse(r), Int32.Parse(s), 3, 3);
+            Played();
         }
     }
 }
