@@ -109,6 +109,7 @@ namespace Ultimate_TicTacToe
             //var info = ((Button)e.OriginalSource).DataContext;
             //TestTextBox.Text = info.ToString();
             ButtonX.IsEnabled = false;
+            StatusBlock.Text = "You chose X";
         }
 
         private void ButtonY_Click(object sender, RoutedEventArgs e)
@@ -123,6 +124,7 @@ namespace Ultimate_TicTacToe
             ButtonX.IsEnabled = false;
             pen = "O";
             ButtonY.IsEnabled = false;
+            StatusBlock.Text = "You chose O";
         }
 
         private void Highlight_Button_Click(object sender, RoutedEventArgs e) //Remove this
@@ -134,7 +136,7 @@ namespace Ultimate_TicTacToe
             var value = ((Button)sender).Name;
             //var button = sender as Button;//
             //var code = ((Button)sender).
-            TestTextBox.Text = (value.ToString()).Substring(0,10);
+            //TestTextBox.Text = (value.ToString()).Substring(0,10);
         }
 
         public void Play( string pen ) //Useless function
@@ -174,9 +176,228 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void Played( )
+        public void Played( int r, int s, int p, int q )
         {
             counter++;
+            int diff = q - p;
+            int sum = p + q;
+            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + q))
+            if (sum % 4 == 0) //1x3 and 3x1
+            {
+                if (p == 1) //1x3
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p+1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + (q - 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+                else if (p == 3) //3x1
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q+2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + (q + 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+            }
+            else if (sum % 4 == 2)
+            {
+                if (p == 1) //1x1
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 3 + "x" + 3)).Text == pen) {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+                else if (p == 3) //3x3
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+            }
+            else if (p == 2 && p != q)
+            {
+                if (q == 1) //2x1
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 2))).Text == pen) {
+                            //Win
+                        }
+                    }
+                }
+                else //2x3
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + q)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 2))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+            }
+            else if (q == 2 && p != q)
+            {
+                if (p == 1) //1x2
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+                else //3x2
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + q)).Text == pen)
+                        {
+                            //Win
+                        }
+                    }
+                }
+            }
+            else if(p == 2 && q == 2) //2x2
+            {
+                if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + (q - 1))).Text == pen)
+                {
+                    if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + (q + 1))).Text == pen) {
+                        //Win
+                    }
+                }
+                else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + (q + 1))).Text == pen)
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + (q - 1))).Text == pen)
+                    {
+                        //Win
+                    }
+                }
+                else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + q)).Text == pen)
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
+                    {
+                        //Win
+                    }
+                }
+                else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                {
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                    {
+                        //Win
+                    }
+                }
+            }
+            /*if ( diff == 0 )
+            {
+
+            }
+            else if ( diff == 1 || diff == -1 )
+            {
+                if ( q == 2 )
+                {
+
+                }
+                else if (p == 2)
+                {
+
+                }
+            }
+            else
+            {
+
+            }*/
             if (pen == "X")
             {
                 pen = "O";
@@ -185,6 +406,7 @@ namespace Ultimate_TicTacToe
             {
                 pen = "X";
             }
+
         }
 
         public void Transfer(int r, int s, int p, int q)
@@ -289,7 +511,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "1x1")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 1, 1);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 1, 1);
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).IsTapEnabled = true;
             //Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)), 0);
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0.15;
@@ -305,7 +527,7 @@ namespace Ultimate_TicTacToe
             //Transfer(Int32.Parse(r), Int32.Parse(s));
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 1, 2);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 1, 2);
         }
 
         private void TextBlock_1x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -317,7 +539,7 @@ namespace Ultimate_TicTacToe
             //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x3_" + r + "x" + s)).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 1, 3);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 1, 3);
         }
 
         private void TextBlock_2x1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -328,7 +550,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x1")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 2, 1);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 2, 1);
         }
 
         private void TextBlock_2x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -339,7 +561,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_2x2")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 2, 2);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 2, 2);
         }
 
         private void TextBlock_2x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -350,7 +572,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "2x3")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 2, 3);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 2, 3);
         }
 
         private void TextBlock_3x1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -361,7 +583,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x1")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 3, 1);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 3, 1);
         }
 
         private void TextBlock_3x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -372,7 +594,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x2")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 3, 2);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 3, 2);
         }
 
         private void TextBlock_3x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -383,7 +605,7 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + "3x3")).Text = pen;
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Transfer(Int32.Parse(r), Int32.Parse(s), 3, 3);
-            Played();
+            Played(Int32.Parse(r), Int32.Parse(s), 3, 3);
         }
     }
 }

@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
       <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
-      <Modified>2014-09-17T16:53:27.335</Modified>
+      <Modified>2014-09-18T09:05:22.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -70,15 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2014-09-17T16:36:48.992</Modified>
+      <Modified>2014-09-17T18:45:44.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-09-17T16:36:48.994</Modified>
+      <Modified>2014-09-17T19:04:23.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
       <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
-      <Modified>2014-09-17T11:14:02.612</Modified>
+      <Modified>2014-09-17T19:04:23.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
