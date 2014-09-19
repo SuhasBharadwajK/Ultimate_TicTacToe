@@ -221,23 +221,7 @@ namespace Ultimate_TicTacToe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.TextBlock StatusBlock; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_1x1; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_1x2; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_1x3; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_2x1; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_2x2; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_2x3; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_3x1; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_3x2; 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
-        private global::Windows.UI.Xaml.Controls.TextBlock WinText_3x3; 
+        private global::Windows.UI.Xaml.Controls.TextBlock WinnerBox; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private bool _contentLoaded;
 
@@ -354,15 +338,7 @@ namespace Ultimate_TicTacToe
             Back_1x2 = (global::Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_1x2");
             Back_1x1 = (global::Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_1x1");
             StatusBlock = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("StatusBlock");
-            WinText_1x1 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_1x1");
-            WinText_1x2 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_1x2");
-            WinText_1x3 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_1x3");
-            WinText_2x1 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_2x1");
-            WinText_2x2 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_2x2");
-            WinText_2x3 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_2x3");
-            WinText_3x1 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_3x1");
-            WinText_3x2 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_3x2");
-            WinText_3x3 = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinText_3x3");
+            WinnerBox = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox");
         }
     }
 }
