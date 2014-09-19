@@ -41,6 +41,7 @@ namespace Ultimate_TicTacToe
                     }
                 }
             }
+            
             /*Loaded += (s, e) =>
             {
                 Back_1x1.IsTapEnabled = false;
@@ -77,6 +78,7 @@ namespace Ultimate_TicTacToe
         int countY = 0;
         int[,] IndieCountX = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        int Victory = 0;
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //this.FindName("TextBlock_1x1_1x1").Text = "O";
@@ -85,7 +87,6 @@ namespace Ultimate_TicTacToe
 
         private void TextBlock_1x1_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
 
         }
 
@@ -114,10 +115,11 @@ namespace Ultimate_TicTacToe
             //((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x1_1x1")).Text = "X";
             ButtonY.IsEnabled = false;
             pen = "X";
+            //MoveBox.Text = pen + "'s turn";
             //var info = ((Button)e.OriginalSource).DataContext;
             //TestTextBox.Text = info.ToString();
             ButtonX.IsEnabled = false;
-            StatusBlock.Text = "You chose X";
+            StatusBlock.Text = pen + "'s turn";
         }
 
         private void ButtonY_Click(object sender, RoutedEventArgs e)
@@ -131,8 +133,9 @@ namespace Ultimate_TicTacToe
             }
             ButtonX.IsEnabled = false;
             pen = "O";
+            //MoveBox.Text = pen + "'s turn";
             ButtonY.IsEnabled = false;
-            StatusBlock.Text = "You chose O";
+            StatusBlock.Text = pen + "'s turn";
         }
 
         private void Highlight_Button_Click(object sender, RoutedEventArgs e) //Remove this
@@ -204,7 +207,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p+1) + "x" + q)).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + q)).Text == pen)
                         {
@@ -213,7 +216,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    if(((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + (q - 2))).Text == pen)
                         {
@@ -234,7 +237,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q+2))).Text == pen)
                         {
@@ -243,7 +246,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 2)).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + (q + 2))).Text == pen)
                         {
@@ -307,7 +310,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 1))).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q + 2))).Text == pen)
                         {
@@ -316,7 +319,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 1) + "x" + q)).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p + 2) + "x" + q)).Text == pen)
                         {
@@ -337,7 +340,7 @@ namespace Ultimate_TicTacToe
                             Won(r, s, p, q , pen);
                         }
                     }
-                    else if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 1))).Text == pen)
                     {
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + (q - 2))).Text == pen)
                         {
@@ -498,17 +501,27 @@ namespace Ultimate_TicTacToe
             {
                 IndieCountX[r - 1, s - 1]++;
                 pen = "O";
+                StatusBlock.Text = pen + "'s turn";
             }
             else
             {
                 IndieCountY[r - 1, s - 1]++;
                 pen = "X";
+                StatusBlock.Text = pen + "'s turn";
             }
             if (winner[r - 1, s - 1] == 0)
             {
-                if (IndieCountX[r - 1, s- 1] > 3 || IndieCountY[r - 1, s- 1] > 3 )
+                if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9) //Was IndieCountX[r - 1, s- 1] > 4 || IndieCountY[r - 1, s- 1] > 4 
                 {
                     winner[r - 1, s - 1] = 3;
+                    for (int i = 1; i <= 3; i++)
+                    {
+                        for (int j = 1; j <= 3; j++)
+                        {
+                            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Text = "T";
+                            StatusBlock.Text = "Tie at " + r + s + p + q;
+                        }
+                    }
                 }
             }
         }
@@ -518,7 +531,7 @@ namespace Ultimate_TicTacToe
             if (winner[p - 1, q - 1] == 1 || winner[p - 1, q - 1] == 2 || winner[p - 1, q - 1] == 3)
             { 
                 Wait(r, s, p, q);
-                StatusBlock.Text = "Already won!";
+                //StatusBlock.Text = "Already won!";
             }
             else
             {
@@ -567,6 +580,7 @@ namespace Ultimate_TicTacToe
         public void Won(int r, int s, int p, int q, string pen)
         {
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0;
+            int Vacancy = 9;
             if (pen == "X")
             {
                 winner[r - 1, s - 1] = 1;
@@ -577,14 +591,224 @@ namespace Ultimate_TicTacToe
                 winner[r - 1, s - 1] = 2;
                 countY++;
             }
-            if (winner[r - 1, s - 1] == 3) //Match draw
+            if (winner[r - 1, s - 1] == 3) //Sub-match draw
             {
-
+                //Implement this in Played()
             }
-            if (true) //Checking for the main grid.
+            else if (winner[r - 1, s - 1] == 1 || winner[r - 1, s - 1] == 2) //Checking the main grid for the grand winner
             {
+                if ((r + s) % 4 == 0)
+                {
+                    if (r == 1) //1x3
+                    {
+                        if (winner[r - 1, s - 1] == winner[0, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 2])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won along the minor diagonal
+                            }
+                        }
+                    }
+                    else if (r == 3) //3x1
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[2, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won along the minor diagonal
+                            }
+                        }
+                    }
+                    else if (r == 2) //2x2
+                    {
+                        if (winner[r - 1, s - 1] == winner[0, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 1])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 2])
+                        {
+                            if (winner[r - 1, s - 1] == winner[1, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[0, 2])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the minor diagonal
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[0, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the major diagonal
+                            }
+                        }
+                    }
+                }
+                else if ((r + s) % 4 == 2)
+                {
+                    if (r == 1) //1x1
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[0, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won along the major diagonal
+                            }
+                        }
+                    }
+                    else if (r == 3) //3x3
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 2])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[2, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won along the major diagonal
+                            }
+                        }
+                    }
+                }
+                else if (r == 2 && r != s)
+                {
+                    if (s == 1) //2x1
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[1, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[0, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first column
+                            }
+                        }
+                    }
+                    else //2x3
+                    {
+                        if (winner[r - 1, s - 1] == winner[0, 2])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[1, 0])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third column
+                            }
+                        }
+                    }
+                }
+                else if (s == 2 && r != s)
+                {
+                    if (r == 1) //1x2
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 1])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the first row
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[0, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second column
+                            }
+                        }
+                    }
+                    else //3x2
+                    {
+                        if (winner[r - 1, s - 1] == winner[1, 1])
+                        {
+                            if (winner[r - 1, s - 1] == winner[0, 1])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the second column
+                            }
+                        }
+                        if (winner[r - 1, s - 1] == winner[2, 0])
+                        {
+                            if (winner[r - 1, s - 1] == winner[2, 2])
+                            {
+                                BigWin(winner[r - 1, s - 1]); //Won in the third row
+                            }
+                        }
+                    }
+                }
+            }
+            //else if ( true ) //Checking the main grid for Oes
+            //{
                 
-            }
+            //}
             /*for (int i = 1; i <= 3; i++)
             {
                 for (int j = 1; j <= 3; j++)
@@ -597,17 +821,46 @@ namespace Ultimate_TicTacToe
                     }
                 }
             }*/
+            /*if (Victory == 0)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        if (true)
+                        {
+                            
+                        }
+                    }
+                }
+            }*/
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (winner[i, j] == 0)
+                    {
+                        Vacancy--;
+                    }
+                }
+            }
+            if (Victory == 0 && Vacancy == 0)
+            {
+                StatusBlock.Text = "The match tied!";
+            }
         }
 
-        private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
+        public void BigWin(int GrandWinner)
         {
-            //ButtonX.Content = "Works!";
-            //SetZIndex();
-            //Back_3x3.
-            Canvas.SetZIndex(Back_3x3, 0);
-            //ButtonY.Content = (Canvas.GetZIndex(Back_3x3)).ToString();
-            Back_3x3.Opacity = 0.15;
-            Activate(3, 3);
+            Victory = 1;
+            if (GrandWinner == 1)
+            {
+                StatusBlock.Text = "X wins the game!";
+            }
+            else if (GrandWinner == 2)
+            {
+                StatusBlock.Text = "O wins the game!";
+            }
         }
 
         public void NullOpacity()
@@ -686,6 +939,18 @@ namespace Ultimate_TicTacToe
             //var info = ((Windows.UI.Xaml.Shapes.Rectangle)e.OriginalSource).DataContext;
             //TestTextBox.Text = info.ToString();
             //ButtonX.Content = info.ToString();
+        }
+
+        private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            //ButtonX.Content = "Works!";
+            //SetZIndex();
+            //Back_3x3.
+            NullOpacity();
+            Canvas.SetZIndex(Back_3x3, 0);
+            //ButtonY.Content = (Canvas.GetZIndex(Back_3x3)).ToString();
+            Back_3x3.Opacity = 0.15;
+            Activate(3, 3);
         }
 
         /*public void Played(int p, int q, int r, int s)

@@ -67,3 +67,8 @@ C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ult
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.g.cs
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xaml
 C:\Users\Kamalanathan\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xbf
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.g.cs
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xaml
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\BlankPage1.xbf
