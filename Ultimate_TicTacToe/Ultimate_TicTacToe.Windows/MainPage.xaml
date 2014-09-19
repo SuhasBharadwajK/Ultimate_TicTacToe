@@ -113,6 +113,15 @@
         <Rectangle x:Name="Back_1x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0" Tapped="Back_1x2_Tapped"/>
         <Rectangle x:Name="Back_1x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0" Tapped="Back_1x1_Tapped"/>
         <TextBlock x:Name="StatusBlock" HorizontalAlignment="Left" Margin="30,126,0,0" TextWrapping="Wrap" Text="Choose a pen:" TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Height="77" Width="219"/>
+        <TextBlock x:Name="WinText_1x1" HorizontalAlignment="Left" Margin="1155,475,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_1x2" HorizontalAlignment="Left" Margin="1225,473,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_1x3" HorizontalAlignment="Left" Margin="1288,473,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_2x1" HorizontalAlignment="Left" Margin="1155,533,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_2x2" HorizontalAlignment="Left" Margin="1227,529,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_2x3" HorizontalAlignment="Left" Margin="1288,525,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52" RenderTransformOrigin="1.844,1.354"/>
+        <TextBlock x:Name="WinText_3x1" HorizontalAlignment="Left" Margin="1155,576,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52" RenderTransformOrigin="0.437,0.538"/>
+        <TextBlock x:Name="WinText_3x2" HorizontalAlignment="Left" Margin="1225,576,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
+        <TextBlock x:Name="WinText_3x3" HorizontalAlignment="Left" Margin="1285,574,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="52"/>
 
     </Grid>
 </Page>
