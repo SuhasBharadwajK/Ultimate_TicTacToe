@@ -166,7 +166,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void NullifyAll(  )
+        public void NullifyAll( )
         {
             for (int i = 1; i <= 3; i++)
                 for (int j = 1; j <= 3; j++)
@@ -197,7 +197,7 @@ namespace Ultimate_TicTacToe
             //counter[r - 1, s - 1]++;
             int sum = p + q;
             VictoryFlag.Text = Vacancy.ToString();
-            WinnerBox.Text = Victory.ToString();
+            //WinnerBox.Text = Victory.ToString();
             //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + q))
             if (sum % 4 == 0) //1x3 and 3x1
             {
@@ -528,7 +528,7 @@ namespace Ultimate_TicTacToe
                 if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9) //Was IndieCountX[r - 1, s- 1] > 4 || IndieCountY[r - 1, s- 1] > 4 
                 {
                     winner[r - 1, s - 1] = 3;
-                    MoveBox.Text = "Tie at " + r + "," + s + " + " + p + ", " + q;
+                    WinnerBox.Text = "Tie at " + r + "," + s;
                     Vacancy--;
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
                     //for (int i = 1; i <= 3; i++)
@@ -604,13 +604,26 @@ namespace Ultimate_TicTacToe
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0;
             //VictoryFlag.Text = Victory.ToString();
             Vacancy--;
+            ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + r + "x" + s)).Opacity = 0;
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Opacity = 0;
+                }   
+            }
+            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + r + "x" + s)).Text = "";
             if (pen == "X")
             {
+                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + r + "x" + s)).Text = "X";
+                WinnerBox.Text = "X won in " + r + ", " + s;
                 winner[r - 1, s - 1] = 1;
                 countX++;
             }
             else if (pen == "O")
             {
+                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + r + "x" + s)).Text = "O";
+                WinnerBox.Text = "O won in " + r + ", " + s;
                 winner[r - 1, s - 1] = 2;
                 countY++;
             }
@@ -899,15 +912,36 @@ namespace Ultimate_TicTacToe
                     
             //    }
             //}
+            ((Windows.UI.Xaml.Controls.Image)this.FindName("MainGrid")).Opacity = 0;
+            //NullOpacity();
+            for (int i = 1; i <= 3; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
+                    ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Visibility = Visibility.Collapsed;
+                    //NullOpacity();
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_"  + i + "x" + j)).Opacity = 0;
+                    for (int k = 1; k <= 3; k++)
+                    {
+                        for (int l = 1; l <= 3; l++)
+                        {
+                            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).Opacity = 0;
+                        }
+                    }
+                }   
+            }
             Victory = 1;
             //WinnerBox.Text = "Game over!";
             if (GrandWinner == 1)
             {
                 WinnerBox.Text = "X wins the game!";
+                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "X";
             }
             else if (GrandWinner == 2)
             {
                 WinnerBox.Text = "O wins the game!";
+                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "O";
             }
         }
 

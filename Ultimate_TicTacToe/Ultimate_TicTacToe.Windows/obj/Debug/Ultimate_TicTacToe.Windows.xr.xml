@@ -32,6 +32,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Opacity" />
       <RootEvent Name="Tapped" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
