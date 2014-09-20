@@ -528,7 +528,16 @@ namespace Ultimate_TicTacToe
                 if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9) //Was IndieCountX[r - 1, s- 1] > 4 || IndieCountY[r - 1, s- 1] > 4 
                 {
                     winner[r - 1, s - 1] = 3;
-                    WinnerBox.Text = "Tie at " + r + "," + s;
+                    WinnerBox.Text = "Tied in " + r + "," + s;
+                    ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + r + "x" + s)).Opacity = 0;
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + r + "x" + s)).Text = "!";
+                    for (int i = 1; i <= 3; i++)
+                    {
+                        for (int j = 1; j <= 3; j++)
+                        {
+                            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Opacity = 0;
+                        }
+                    }
                     Vacancy--;
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
                     //for (int i = 1; i <= 3; i++)
@@ -899,7 +908,26 @@ namespace Ultimate_TicTacToe
             //WinnerBox.Text = "Win at " + r + ", " + s;
             if (Victory == 0 && Vacancy == 0)
             {
+                ((Windows.UI.Xaml.Controls.Image)this.FindName("MainGrid")).Opacity = 0;
                 StatusBlock.Text = "The match tied!";
+                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "!";
+                for (int i = 1; i <= 3; i++)
+                {
+                    for (int j = 1; j <= 3; j++)
+                    {
+                        ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
+                        ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Visibility = Visibility.Collapsed;
+                        //NullOpacity();
+                        ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + i + "x" + j)).Opacity = 0;
+                        for (int k = 1; k <= 3; k++)
+                        {
+                            for (int l = 1; l <= 3; l++)
+                            {
+                                ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).Opacity = 0;
+                            }
+                        }
+                    }
+                }
             }
         }
 
