@@ -78,6 +78,7 @@ namespace Ultimate_TicTacToe
         int countY = 0;
         int[,] IndieCountX = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        int Vacancy = 9;
         int Victory = 0;
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -263,7 +264,7 @@ namespace Ultimate_TicTacToe
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 3 + "x" + 3)).Text == pen)
                         {
                             ////StatusBlock.Text = pen + " Won!";
-                            winner[r - 1, s - 1] = 1;
+                            //winner[r - 1, s - 1] = 1;
                             Won(r, s, p, q , pen);
                         }
                     }
@@ -272,7 +273,7 @@ namespace Ultimate_TicTacToe
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 3 + "x" + 2)).Text == pen)
                         {
                             ////StatusBlock.Text = pen + " Won!";
-                            winner[r - 1, s - 1] = 1;
+                            //winner[r - 1, s - 1] = 1;
                             Won(r, s, p, q , pen);
                         }
                     }
@@ -281,7 +282,7 @@ namespace Ultimate_TicTacToe
                         if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + 2 + "x" + 3)).Text == pen)
                         {
                             ////StatusBlock.Text = pen + " Won!";
-                            winner[r - 1, s - 1] = 1;
+                            //winner[r - 1, s - 1] = 1;
                             Won(r, s, p, q , pen);
                         }
                     }
@@ -292,7 +293,7 @@ namespace Ultimate_TicTacToe
                             //Win
                             //StatusBlock.Text = "1 , 3 + 3, 1";
                             ////StatusBlock.Text = pen + " Won!";
-                            winner[r - 1, s - 1] = 1;
+                            //winner[r - 1, s - 1] = 1;
                             Won(r, s, p, q , pen);
                         }
                     }
@@ -347,6 +348,15 @@ namespace Ultimate_TicTacToe
                             //StatusBlock.Text = pen + " Won!";
                             //winner[r-1, s-1] = 1;
                             Won(r, s, p, q , pen);
+                        }
+                    }
+                    if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 1) + "x" + (q - 1))).Text == pen)
+                    {
+                        if (((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + (p - 2) + "x" + (q - 2))).Text == pen)
+                        {
+                            //StatusBlock.Text = pen + " Won!";
+                            //winner[r-1, s-1] = 1;
+                            Won(r, s, p, q, pen);
                         }
                     }
                 }
@@ -514,14 +524,17 @@ namespace Ultimate_TicTacToe
                 if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9) //Was IndieCountX[r - 1, s- 1] > 4 || IndieCountY[r - 1, s- 1] > 4 
                 {
                     winner[r - 1, s - 1] = 3;
-                    for (int i = 1; i <= 3; i++)
-                    {
-                        for (int j = 1; j <= 3; j++)
-                        {
-                            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Text = "T";
-                            StatusBlock.Text = "Tie at " + r + s + p + q;
-                        }
-                    }
+                    MoveBox.Text = "Tie at " + r + "," + s + " + " + p + ", " + q;
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
+                    //for (int i = 1; i <= 3; i++)
+                    //{
+                    //    for (int j = 1; j <= 3; j++)
+                    //    {
+                    //        //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Text = "T";
+                    //        winner[r - 1, s - 1] = 3;
+                            
+                    //    }
+                    //}
                 }
             }
         }
@@ -580,7 +593,8 @@ namespace Ultimate_TicTacToe
         public void Won(int r, int s, int p, int q, string pen)
         {
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0;
-            int Vacancy = 9;
+            VictoryFlag.Text = Victory.ToString();
+            Vacancy--;
             if (pen == "X")
             {
                 winner[r - 1, s - 1] = 1;
@@ -591,11 +605,27 @@ namespace Ultimate_TicTacToe
                 winner[r - 1, s - 1] = 2;
                 countY++;
             }
-            if (winner[r - 1, s - 1] == 3) //Sub-match draw
-            {
-                //Implement this in Played()
-            }
-            else if (winner[r - 1, s - 1] == 1 || winner[r - 1, s - 1] == 2) //Checking the main grid for the grand winner
+            //if (winner[r - 1, s - 1] == 0)
+            //{
+            //    if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9) //Was IndieCountX[r - 1, s- 1] > 4 || IndieCountY[r - 1, s- 1] > 4 
+            //    {
+            //        winner[r - 1, s - 1] = 3;
+            //        MoveBox.Text = "Tie at " + r + "," + s + " and " + p + ", " + q;
+            //    }
+            //}
+            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
+            //for (int i = 1; i <= 3; i++)
+            //{
+            //    for (int j = 1; j <= 3; j++)
+            //    {
+            //        ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + i + "x" + j)).Text = winner[r - 1, s - 1].ToString();
+            //    }
+            //}
+            //if (winner[r - 1, s - 1] == 3) //Sub-match draw
+            //{
+            //    //Implement this in Played()
+            //}
+            if (true) //Checking the main grid for the grand winner //Was winner[r - 1, s - 1] == 1 || winner[r - 1, s - 1] == 2
             {
                 if ((r + s) % 4 == 0)
                 {
@@ -834,16 +864,16 @@ namespace Ultimate_TicTacToe
                     }
                 }
             }*/
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    if (winner[i, j] == 0)
-                    {
-                        Vacancy--;
-                    }
-                }
-            }
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        if (winner[i, j] != 0)
+            //        {
+            //            Vacancy--;
+            //        }
+            //    }
+            //}
             if (Victory == 0 && Vacancy == 0)
             {
                 StatusBlock.Text = "The match tied!";
@@ -852,6 +882,13 @@ namespace Ultimate_TicTacToe
 
         public void BigWin(int GrandWinner)
         {
+            //for (int i = 0; i < length; i++)
+            //{
+            //    for (int j = 0; j < length; j++)
+            //    {
+                    
+            //    }
+            //}
             Victory = 1;
             if (GrandWinner == 1)
             {
