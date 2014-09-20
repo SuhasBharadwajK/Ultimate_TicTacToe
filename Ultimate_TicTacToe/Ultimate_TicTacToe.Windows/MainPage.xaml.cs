@@ -80,6 +80,8 @@ namespace Ultimate_TicTacToe
         int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int Vacancy = 9;
         int Victory = 0;
+        int bigCountx = 0;
+        int bigCountY = 0;
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //this.FindName("TextBlock_1x1_1x1").Text = "O";
@@ -194,6 +196,8 @@ namespace Ultimate_TicTacToe
             //int diff = q - p;
             //counter[r - 1, s - 1]++;
             int sum = p + q;
+            VictoryFlag.Text = Vacancy.ToString();
+            WinnerBox.Text = Victory.ToString();
             //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + q))
             if (sum % 4 == 0) //1x3 and 3x1
             {
@@ -525,6 +529,7 @@ namespace Ultimate_TicTacToe
                 {
                     winner[r - 1, s - 1] = 3;
                     MoveBox.Text = "Tie at " + r + "," + s + " + " + p + ", " + q;
+                    Vacancy--;
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
                     //for (int i = 1; i <= 3; i++)
                     //{
@@ -536,6 +541,10 @@ namespace Ultimate_TicTacToe
                     //    }
                     //}
                 }
+            }
+            if (Victory == 0 && Vacancy == 0)
+            {
+                StatusBlock.Text = "The match tied!";
             }
         }
 
@@ -593,7 +602,7 @@ namespace Ultimate_TicTacToe
         public void Won(int r, int s, int p, int q, string pen)
         {
             //((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0;
-            VictoryFlag.Text = Victory.ToString();
+            //VictoryFlag.Text = Victory.ToString();
             Vacancy--;
             if (pen == "X")
             {
@@ -874,6 +883,7 @@ namespace Ultimate_TicTacToe
             //        }
             //    }
             //}
+            //WinnerBox.Text = "Win at " + r + ", " + s;
             if (Victory == 0 && Vacancy == 0)
             {
                 StatusBlock.Text = "The match tied!";
@@ -890,13 +900,14 @@ namespace Ultimate_TicTacToe
             //    }
             //}
             Victory = 1;
+            //WinnerBox.Text = "Game over!";
             if (GrandWinner == 1)
             {
-                StatusBlock.Text = "X wins the game!";
+                WinnerBox.Text = "X wins the game!";
             }
             else if (GrandWinner == 2)
             {
-                StatusBlock.Text = "O wins the game!";
+                WinnerBox.Text = "O wins the game!";
             }
         }
 

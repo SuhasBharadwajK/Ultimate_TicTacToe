@@ -113,7 +113,7 @@
             <Rectangle x:ConnectionId='91' x:Name="Back_1x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"                         />
             <Rectangle x:ConnectionId='92' x:Name="Back_1x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"                         />
             <TextBlock x:Name="StatusBlock" HorizontalAlignment="Left" Margin="10,340,0,0" TextWrapping="Wrap" Text="Choose your symbol" TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Height="77" Width="219"/>
-            <TextBlock x:Name="WinnerBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="59" Width="149" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236"/>
+            <TextBlock x:Name="WinnerBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="59" Width="149" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236" Margin="52,699,0,0"/>
             <TextBlock x:Name="MoveBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="59" Width="149" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236" Margin="1157,196,0,0"/>
         <TextBlock x:Name="WinnerBox_1x1" HorizontalAlignment="Left" Margin="1135,500,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60"/>
         <TextBlock x:Name="WinnerBox_1x2" HorizontalAlignment="Left" Margin="1207,499,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60"/>
@@ -124,7 +124,7 @@
         <TextBlock x:Name="WinnerBox_3x1" HorizontalAlignment="Left" Margin="1135,645,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60"/>
         <TextBlock x:Name="WinnerBox_3x2" HorizontalAlignment="Left" Margin="1207,645,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60"/>
         <TextBlock x:Name="WinnerBox_3x3" HorizontalAlignment="Left" Margin="1272,645,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60"/>
-        <TextBlock x:Name="VictoryFlag" HorizontalAlignment="Left" Margin="1232,222,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="53"/>
+        <TextBlock x:Name="VictoryFlag" HorizontalAlignment="Left" Margin="1232,343,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="53"/>
     </Grid>
 </Page>
 
