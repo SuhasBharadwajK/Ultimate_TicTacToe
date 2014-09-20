@@ -80,8 +80,8 @@ namespace Ultimate_TicTacToe
         int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int Vacancy = 9;
         int Victory = 0;
-        int bigCountx = 0;
-        int bigCountY = 0;
+        //int bigCountx = 0;
+        //int bigCountY = 0;
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //this.FindName("TextBlock_1x1_1x1").Text = "O";
