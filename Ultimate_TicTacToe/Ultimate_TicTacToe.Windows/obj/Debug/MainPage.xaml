@@ -9,8 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.518">
 
+        <!--<ProgressRing IsActive="True"/>-->
         <Image x:Name="MainGrid" HorizontalAlignment="Left" Height="707" Margin="328,29,0,0" VerticalAlignment="Top" Width="735" Source="Assets/TicTacToe Grid_2100x2100_thick_Red.png" RenderTransformOrigin="0.505,0.492" Canvas.ZIndex="3"/>
-
         <Image x:Name="Grid_1x1" HorizontalAlignment="Left" Height="238" Margin="332,31,0,0" VerticalAlignment="Top" Width="237" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3"/>
         <TextBlock x:ConnectionId='1' x:Name="TextBlock_1x1_1x1"                               HorizontalAlignment="Left" Margin="346,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"                                                    FontSize="50" Text="" TextAlignment="Center" Canvas.ZIndex="3"/>
         <TextBlock x:ConnectionId='2' x:Name="TextBlock_1x1_1x2"                               HorizontalAlignment="Left" Margin="419,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="63"                                                    FontSize="50" Text="" TextAlignment="Center" Canvas.ZIndex="3"/>
@@ -112,7 +112,7 @@
         <Rectangle x:ConnectionId='90' x:Name="Back_1x3" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="824,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"                         />
         <Rectangle x:ConnectionId='91' x:Name="Back_1x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="579,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" Opacity="0"                         />
         <Rectangle x:ConnectionId='92' x:Name="Back_1x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="230" Margin="332,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="232" Opacity="0"                         />
-        <TextBlock x:Name="StatusBlock" HorizontalAlignment="Left" Margin="23,340,0,0" TextWrapping="Wrap" Text="Choose your symbol" TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Height="77" Width="219"/>
+        <TextBlock x:Name="StatusBlock" HorizontalAlignment="Left" Margin="23,340,0,0" TextWrapping="Wrap" Text="Choose X or O" TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Height="77" Width="219"/>
         <TextBlock x:Name="WinnerBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="288" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236" Margin="1066,343,0,0"/>
         <TextBlock x:Name="UpdateBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="248" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236" Margin="23,681,0,0" Text="Obsolete Box" Opacity="0"/>
         <TextBlock x:Name="WinnerBox_1x1" HorizontalAlignment="Left" Margin="1135,500,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="63" Width="60" Opacity="0"/>
