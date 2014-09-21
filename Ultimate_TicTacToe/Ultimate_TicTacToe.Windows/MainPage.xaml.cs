@@ -50,15 +50,6 @@ namespace Ultimate_TicTacToe
         int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int Vacancy = 9;
         int Victory = 0;
-        private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            
-        }
-
-        private void TextBlock_1x1_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void ButtonX_Click(object sender, RoutedEventArgs e)
         {
@@ -88,25 +79,6 @@ namespace Ultimate_TicTacToe
             pen = "O";
             ButtonY.IsEnabled = false;
             StatusBlock.Text = pen + "'s turn";
-        }
-
-        private void Highlight_Button_Click(object sender, RoutedEventArgs e) //Remove this
-        {
-            Back_1x1.Opacity = 0.15;
-            var value = ((Button)sender).Name;
-        }
-
-        public void Play( string pen ) //Useless function
-        {
-            //int counter = 
-            if (pen == "X")
-            {
-
-            }
-            else
-            {
-                //(global::Windows.UI.Xaml.Controls.Canvas)
-            }
         }
 
         public void NullifyAll( )

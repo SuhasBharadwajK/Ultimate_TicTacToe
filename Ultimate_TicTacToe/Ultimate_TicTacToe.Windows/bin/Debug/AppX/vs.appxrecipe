@@ -1,140 +1,133 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SUHAS-PC</Machine>
-    <WindowsUser>Suhas</WindowsUser>
-    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <Machine>BHARGAVA</Machine>
+    <WindowsUser>Bhargava94</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>16e444b0-d7db-4439-8575-6778b9f6ea56</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>5053C091EFF02923608E2763E3D3338875CD546B1BBF3D15D8C54BC3947E57DF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>3F67DF71A5935F04D29A756A198B6297FD759FBCDC7EB2FC28788DDAEB2F2571</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>16e444b0-d7db-4439-8575-6778b9f6ea56_1.0.0.0_neutral__evbpqqwrht6rp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>16e444b0-d7db-4439-8575-6778b9f6ea56_evbpqqwrht6rp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>16e444b0-d7db-4439-8575-6778b9f6ea56</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Suhas</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T02:15:12.966</Modified>
+      <Modified>2014-09-21T09:28:53.729</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
       <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
-      <Modified>2014-09-21T02:12:31.803</Modified>
+      <Modified>2014-09-21T09:28:50.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactoryNewSplashScreenLogo_Black_1.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactoryNewSplashScreenLogo_Black_1.png">
       <PackagePath>Assets\FormatFactoryNewSplashScreenLogo_Black_1.png</PackagePath>
-      <Modified>2014-09-21T02:06:45.572</Modified>
+      <Modified>2014-09-21T08:11:46.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen.png">
       <PackagePath>Assets\FormatFactorySplashScreen.png</PackagePath>
-      <Modified>2014-09-21T01:46:51.584</Modified>
+      <Modified>2014-09-21T08:11:46.868</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White.png">
       <PackagePath>Assets\FormatFactorySplashScreenLogo_alpha_White.png</PackagePath>
-      <Modified>2014-09-21T01:34:31.197</Modified>
+      <Modified>2014-09-21T08:11:46.871</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~1.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~1.png">
       <PackagePath>Assets\FormatFactorySplashScreenLogo_alpha_White~1.png</PackagePath>
-      <Modified>2014-09-21T01:36:46.244</Modified>
+      <Modified>2014-09-21T08:11:46.873</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~2.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~2.png">
       <PackagePath>Assets\FormatFactorySplashScreenLogo_alpha_White~2.png</PackagePath>
-      <Modified>2014-09-21T01:37:32.540</Modified>
+      <Modified>2014-09-21T08:11:46.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~3.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreenLogo_alpha_White~3.png">
       <PackagePath>Assets\FormatFactorySplashScreenLogo_alpha_White~3.png</PackagePath>
-      <Modified>2014-09-21T01:51:01.261</Modified>
+      <Modified>2014-09-21T08:11:46.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen~1.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen~1.png">
       <PackagePath>Assets\FormatFactorySplashScreen~1.png</PackagePath>
-      <Modified>2014-09-21T01:47:30.438</Modified>
+      <Modified>2014-09-21T08:11:46.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen~2.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactorySplashScreen~2.png">
       <PackagePath>Assets\FormatFactorySplashScreen~2.png</PackagePath>
-      <Modified>2014-09-21T01:48:34.685</Modified>
+      <Modified>2014-09-21T08:11:46.884</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T01:34:31.197</Modified>
+      <Modified>2014-09-21T08:11:46.886</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\rsz_newsplashscreenlogo_black.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\rsz_newsplashscreenlogo_black.scale-100.png">
       <PackagePath>Assets\rsz_newsplashscreenlogo_black.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T02:11:50.293</Modified>
+      <Modified>2014-09-21T08:11:46.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T01:37:32.540</Modified>
+      <Modified>2014-09-21T08:11:46.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <Modified>2014-09-21T01:47:30.438</Modified>
+      <Modified>2014-09-21T08:11:46.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-140.png">
       <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
-      <Modified>2014-09-21T01:48:34.685</Modified>
+      <Modified>2014-09-21T08:11:46.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreen.scale-180.png">
       <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
-      <Modified>2014-09-21T01:45:30.543</Modified>
+      <Modified>2014-09-21T08:11:46.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreenLogo_alpha_Black.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreenLogo_alpha_Black.png">
       <PackagePath>Assets\SplashScreenLogo_alpha_Black.png</PackagePath>
-      <Modified>2014-09-21T01:29:05.374</Modified>
+      <Modified>2014-09-21T08:11:46.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreenLogo_alpha_White.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\SplashScreenLogo_alpha_White.scale-100.png">
       <PackagePath>Assets\SplashScreenLogo_alpha_White.scale-100.png</PackagePath>
-      <Modified>2014-09-21T01:29:05.374</Modified>
+      <Modified>2014-09-21T08:11:46.903</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T01:36:46.244</Modified>
+      <Modified>2014-09-21T08:11:46.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Blue.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Blue.png">
       <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Blue.png</PackagePath>
-      <Modified>2014-09-19T16:43:13.558</Modified>
+      <Modified>2014-09-21T08:11:46.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Indigo.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Indigo.png">
       <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Indigo.png</PackagePath>
-      <Modified>2014-09-15T16:38:51.771</Modified>
+      <Modified>2014-09-21T08:11:46.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Pink.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Pink.png">
       <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Pink.png</PackagePath>
-      <Modified>2014-09-15T16:38:51.774</Modified>
+      <Modified>2014-09-21T08:11:46.973</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Red.png">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\TicTacToe Grid_2100x2100_thick_Red.png">
       <PackagePath>Assets\TicTacToe Grid_2100x2100_thick_Red.png</PackagePath>
-      <Modified>2014-09-15T16:38:51.717</Modified>
+      <Modified>2014-09-21T08:11:46.975</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-09-15T16:40:12.529</Modified>
+      <Modified>2014-09-21T08:11:47.281</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2014-09-19T16:51:06.972</Modified>
+      <Modified>2014-09-21T08:11:47.290</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-09-21T02:12:31.089</Modified>
+      <Modified>2014-09-21T08:11:47.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
-      <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
-      <Modified>2014-09-21T02:12:30.983</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Bhargava94\Documents\GitHub\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-21T02:15:12.734</Modified>
+      <Modified>2014-09-21T09:28:51.854</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
