@@ -316,18 +316,22 @@ namespace Ultimate_TicTacToe
                 }
             }
 
-            if (pen == "X")
+            if (Victory != 1)
             {
-                IndieCountX[r - 1, s - 1]++;
-                pen = "O";
-                StatusBlock.Text = pen + "'s turn";
+                if (pen == "X")
+                {
+                    IndieCountX[r - 1, s - 1]++;
+                    pen = "O";
+                    StatusBlock.Text = pen + "'s turn";
+                }
+                else if (pen == "O")
+                {
+                    IndieCountY[r - 1, s - 1]++;
+                    pen = "X";
+                    StatusBlock.Text = pen + "'s turn";
+                }
             }
-            else
-            {
-                IndieCountY[r - 1, s - 1]++;
-                pen = "X";
-                StatusBlock.Text = pen + "'s turn";
-            }
+
             if (winner[r - 1, s - 1] == 0)
             {
                 if (IndieCountX[r - 1, s - 1] + IndieCountY[r - 1, s - 1] == 9)
@@ -346,10 +350,6 @@ namespace Ultimate_TicTacToe
                     Vacancy--;
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
                 }
-            }
-            if (Victory == 0 && Vacancy == 0)
-            {
-                StatusBlock.Text = "The match tied!";
             }
         }
 
@@ -637,15 +637,17 @@ namespace Ultimate_TicTacToe
             if (Victory == 0 && Vacancy == 0)
             {
                 ((Windows.UI.Xaml.Controls.Image)this.FindName("MainGrid")).Opacity = 0;
-                StatusBlock.Text = "The match tied!";
+                WinnerBox.Text = "The match tied!";
+                StatusBlock.Text = "";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "!";
+                ResetButton.IsEnabled = true;
+                ResetButton.Opacity = 1;
                 for (int i = 1; i <= 3; i++)
                 {
                     for (int j = 1; j <= 3; j++)
                     {
                         ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
                         ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Visibility = Visibility.Collapsed;
-                        //NullOpacity();
                         ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + i + "x" + j)).Opacity = 0;
                         for (int k = 1; k <= 3; k++)
                         {
@@ -681,14 +683,18 @@ namespace Ultimate_TicTacToe
             Victory = 1;
             if (GrandWinner == 1)
             {
+                StatusBlock.Text = "";
                 WinnerBox.Text = "X wins the game!";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "X";
             }
             else if (GrandWinner == 2)
             {
                 WinnerBox.Text = "O wins the game!";
+                StatusBlock.Text = "";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "O";
             }
+            ResetButton.IsEnabled = true;
+            ResetButton.Opacity = 1;
         }
 
         public void NullOpacity()
@@ -872,6 +878,13 @@ namespace Ultimate_TicTacToe
             ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + r + "x" + s)).Opacity = 0;
             Played(Int32.Parse(r), Int32.Parse(s), 3, 3);
             Transfer(Int32.Parse(r), Int32.Parse(s), 3, 3);
+        }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            var CurrentFrame = Window.Current.Content as Frame;
+            CurrentFrame.Navigate(CurrentFrame.Content.GetType());
+            CurrentFrame.GoBack();
         }
     }
 }

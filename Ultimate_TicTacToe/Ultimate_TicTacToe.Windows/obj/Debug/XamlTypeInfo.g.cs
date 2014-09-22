@@ -185,6 +185,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
             case 0:   //  Ultimate_TicTacToe.BlankPage1
                 userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_BlankPage1;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -199,6 +200,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
             case 3:   //  Ultimate_TicTacToe.MainPage
                 userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
             }
@@ -249,6 +251,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         virtual public bool IsMarkupExtension { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsBindable { get { throw new global::System.NotImplementedException(); } }
         virtual public bool IsReturnTypeStub { get { throw new global::System.NotImplementedException(); } }
+        virtual public bool IsLocalType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType ItemType { get { throw new global::System.NotImplementedException(); } }
         virtual public global::Windows.UI.Xaml.Markup.IXamlType KeyType { get { throw new global::System.NotImplementedException(); } }
         virtual public object ActivateInstance() { throw new global::System.NotImplementedException(); }
@@ -273,6 +276,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         bool _isMarkupExtension;
         bool _isBindable;
         bool _isReturnTypeStub;
+        bool _isLocalType;
 
         string _contentPropertyName;
         string _itemTypeName;
@@ -297,6 +301,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         override public bool IsMarkupExtension { get { return _isMarkupExtension; } }
         override public bool IsBindable { get { return _isBindable; } }
         override public bool IsReturnTypeStub { get { return _isReturnTypeStub; } }
+        override public bool IsLocalType { get { return _isLocalType; } }
 
         override public global::Windows.UI.Xaml.Markup.IXamlMember ContentProperty
         {
@@ -430,6 +435,11 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
             _isReturnTypeStub = true;
         }
 
+        public void SetIsLocalType()
+        {
+            _isLocalType = true;
+        }
+
         public void SetItemTypeName(string itemTypeName)
         {
             _itemTypeName = itemTypeName;
@@ -527,5 +537,6 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         }
     }
 }
+
 
 

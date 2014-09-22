@@ -19,6 +19,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="IsEnabled" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -34,7 +36,6 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Opacity" />
       <RootEvent Name="Tapped" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Ultimate_TicTacToe.BlankPage1" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
