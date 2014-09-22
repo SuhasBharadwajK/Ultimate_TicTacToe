@@ -15,8 +15,12 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Ultimate_TicTacToe.Windows.App">
-      <m2:VisualElements DisplayName="Ultimate_TicTacToe.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Ultimate_TicTacToe.Windows" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="The Ultimate TicTacToe" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Ultimate_TicTacToe.Windows" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
         <m2:SplashScreen Image="Assets\rsz_newsplashscreenlogo_black.png" BackgroundColor="#FFFFFF" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
       </m2:VisualElements>
     </Application>
   </Applications>

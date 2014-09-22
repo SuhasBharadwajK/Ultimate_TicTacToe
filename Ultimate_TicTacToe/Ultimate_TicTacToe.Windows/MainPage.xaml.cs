@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Ultimate_TicTacToe
@@ -24,6 +25,7 @@ namespace Ultimate_TicTacToe
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -107,7 +109,6 @@ namespace Ultimate_TicTacToe
         public void Played( int r, int s, int p, int q )
         {
             int sum = p + q;
-            VictoryFlag.Text = Vacancy.ToString();
             if (sum % 4 == 0) //1x3 and 3x1
             {
                 if (p == 1) //1x3
@@ -421,7 +422,7 @@ namespace Ultimate_TicTacToe
                 winner[r - 1, s - 1] = 2;
                 countY++;
             }
-            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
+            //((Windows.UI.Xaml.Controls.TextBlock)this.FindName("WinnerBox_" + r + "x" + s)).Text = winner[r - 1, s - 1].ToString();
 
             if (true) //Checking the main grid for the grand winner
             {
@@ -882,9 +883,32 @@ namespace Ultimate_TicTacToe
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            var CurrentFrame = Window.Current.Content as Frame;
-            CurrentFrame.Navigate(CurrentFrame.Content.GetType());
-            CurrentFrame.GoBack();
+            //var CurrentFrame = Window.Current.Content as Frame;
+            //CurrentFrame.Navigate(CurrentFrame.Content.GetType());
+            //CurrentFrame.GoBack();
+            Frame.Navigate(typeof(MainPage));
+            Frame.GoBack(); 
+        }
+
+        private void CommandInvokedHandler(IUICommand command)
+        {
+            //throw new NotImplementedException();
+            if (command.Label == "Yes")
+            {
+                Frame.GoBack();
+            }
+        }
+
+        private async void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Frame.GoBack();
+            //Frame.Navigate(typeof(MenuPage));
+            var Alert = new MessageDialog("Are you sure you want to quit this game?");
+            //Frame.GoBack();
+            Alert.Commands.Add(new UICommand("Yes", new UICommandInvokedHandler(this.CommandInvokedHandler)));
+            Alert.Commands.Add(new UICommand("No", new UICommandInvokedHandler(this.CommandInvokedHandler)));
+            Alert.DefaultCommandIndex = 0;
+            await Alert.ShowAsync();
         }
     }
 }

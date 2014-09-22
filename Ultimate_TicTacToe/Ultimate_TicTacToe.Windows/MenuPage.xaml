@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Ultimate_TicTacToe.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ultimate_TicTacToe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="StartButton" Content="Play" FontSize="40" HorizontalAlignment="Left" Margin="471,153,0,0" VerticalAlignment="Top" Height="90" Width="465" Click="StartButton_Click"/>
+        <Button x:Name="HelpButton" Content="Instructions" FontSize="40" HorizontalAlignment="Left" Margin="471,335,0,0" VerticalAlignment="Top" Height="90" Width="465" Click="HelpButton_Click"/>
+        <Button x:Name="ExitButton" Content="Quit" FontSize="40" HorizontalAlignment="Left" Margin="471,514,0,0" VerticalAlignment="Top" Height="90" Width="465" Click="ExitButton_Click"/>
+
+    </Grid>
+</Page>

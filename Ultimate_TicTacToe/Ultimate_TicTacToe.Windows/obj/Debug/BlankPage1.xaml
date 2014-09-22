@@ -11,6 +11,8 @@
         <Button x:ConnectionId='1' x:Name="ButtonX" Content="X" FontSize="200" HorizontalAlignment="Left" Margin="115,226,0,0" VerticalAlignment="Top" Height="300" Width="300"                     />
         <Button x:ConnectionId='2' x:Name="ButtonO" Content="O" FontSize="200" HorizontalAlignment="Left" Margin="962,226,0,0" VerticalAlignment="Top" Height="300" Width="300"                      />
         <TextBlock HorizontalAlignment="Left" Margin="420,60,0,0" TextWrapping="Wrap" Text="Choose one" FontSize="70" TextAlignment="Center" VerticalAlignment="Top" Height="100" Width="512"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="1349,443,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="100" Margin="752,288,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Page>

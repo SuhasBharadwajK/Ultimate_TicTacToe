@@ -29,18 +29,18 @@ namespace Ultimate_TicTacToe
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(MainPage));
         }
 
         private void ButtonO_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 1; i <= 3; i++)
-            {
-                for (int j = 1; j <= 3; j++)
-                {
-                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
-                }
-            }
+            //for (int i = 1; i <= 3; i++)
+            //{
+            //    for (int j = 1; j <= 3; j++)
+            //    {
+            //        Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
+            //    }
+            //}
         }
     }
 }

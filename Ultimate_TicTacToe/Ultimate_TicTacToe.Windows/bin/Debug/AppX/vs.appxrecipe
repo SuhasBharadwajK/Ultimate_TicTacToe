@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>16e444b0-d7db-4439-8575-6778b9f6ea56</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>5053C091EFF02923608E2763E3D3338875CD546B1BBF3D15D8C54BC3947E57DF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>080FB69CB30289C14A520AF7283582780F7C4B84FBF6D4C22D649EB2A4F65EDA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>16e444b0-d7db-4439-8575-6778b9f6ea56_1.0.0.0_neutral__evbpqqwrht6rp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>16e444b0-d7db-4439-8575-6778b9f6ea56_evbpqqwrht6rp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>16e444b0-d7db-4439-8575-6778b9f6ea56</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-21T18:01:34.872</Modified>
+      <Modified>2014-09-22T10:18:25.579</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.exe">
       <PackagePath>Ultimate_TicTacToe.Windows.exe</PackagePath>
-      <Modified>2014-09-22T08:35:38.816</Modified>
+      <Modified>2014-09-22T11:51:40.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\Assets\FormatFactoryNewSplashScreenLogo_Black_1.png">
       <PackagePath>Assets\FormatFactoryNewSplashScreenLogo_Black_1.png</PackagePath>
@@ -122,19 +122,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2014-09-21T11:49:02.344</Modified>
+      <Modified>2014-09-22T10:18:24.691</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\InstructionsPage.xbf">
+      <PackagePath>InstructionsPage.xbf</PackagePath>
+      <Modified>2014-09-22T11:25:56.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-09-22T08:16:41.110</Modified>
+      <Modified>2014-09-22T11:25:56.446</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\MenuPage.xbf">
+      <PackagePath>MenuPage.xbf</PackagePath>
+      <Modified>2014-09-22T11:25:56.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\Ultimate_TicTacToe.Windows.xr.xml">
       <PackagePath>Ultimate_TicTacToe.Windows.xr.xml</PackagePath>
-      <Modified>2014-09-22T08:15:32.188</Modified>
+      <Modified>2014-09-22T11:25:56.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-21T18:01:34.303</Modified>
+      <Modified>2014-09-22T10:18:25.342</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
