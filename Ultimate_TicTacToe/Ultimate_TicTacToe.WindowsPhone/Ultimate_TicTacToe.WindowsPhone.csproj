@@ -83,6 +83,9 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -94,14 +97,39 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\FormatFactoryNewSplashScreenLogo_Black_1.png" />
+    <Content Include="Assets\FormatFactorySplashScreen.png" />
+    <Content Include="Assets\FormatFactorySplashScreenLogo_alpha_White.png" />
+    <Content Include="Assets\FormatFactorySplashScreenLogo_alpha_White~1.png" />
+    <Content Include="Assets\FormatFactorySplashScreenLogo_alpha_White~2.png" />
+    <Content Include="Assets\FormatFactorySplashScreenLogo_alpha_White~3.png" />
+    <Content Include="Assets\FormatFactorySplashScreen~1.png" />
+    <Content Include="Assets\FormatFactorySplashScreen~2.png" />
+    <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\rsz_newsplashscreenlogo_black.scale-100.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-140.png" />
+    <Content Include="Assets\SplashScreen.scale-180.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\SplashScreenLogo_alpha_Black.png" />
+    <Content Include="Assets\SplashScreenLogo_alpha_White.scale-100.png" />
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\TicTacToe Grid_2100x2100_thick_Blue.png" />
+    <Content Include="Assets\TicTacToe Grid_2100x2100_thick_Indigo.png" />
+    <Content Include="Assets\TicTacToe Grid_2100x2100_thick_Pink.png" />
+    <Content Include="Assets\TicTacToe Grid_2100x2100_thick_Red.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

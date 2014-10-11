@@ -19,6 +19,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
@@ -47,6 +49,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
       <RootProperty Name="IsHitTestVisible" />
       <RootProperty Name="RenderTransformOrigin" />
@@ -65,6 +68,13 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Ultimate_TicTacToe.BlankPage1" />
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -77,6 +87,18 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
+      <RootMethod Name="GetTop" />
+      <RootMethod Name="SetTop" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -99,14 +121,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Source" />
       <RootProperty Name="RenderTransformOrigin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
-      <RootMethod Name="GetZIndex" />
-      <RootMethod Name="SetZIndex" />
-      <RootMethod Name="GetLeft" />
-      <RootMethod Name="SetLeft" />
-      <RootMethod Name="GetTop" />
-      <RootMethod Name="SetTop" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Fill" />

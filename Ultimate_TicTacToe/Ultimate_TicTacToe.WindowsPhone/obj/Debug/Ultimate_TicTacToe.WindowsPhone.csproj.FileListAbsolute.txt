@@ -30,3 +30,8 @@ C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate
 C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\bin\Debug\BlankPage1.xbf
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\BlankPage1.g.i.cs
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\BlankPage1.g.cs
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\BlankPage1.xaml
+C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\obj\Debug\BlankPage1.xbf

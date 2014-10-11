@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="16e444b0-d7db-4439-8575-6778b9f6ea56" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BlankPage1.xbf" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/BlankPage1.xbf">
+				<Candidate type="Path">
+					<Value>BlankPage1.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InstructionsPage.xbf" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/InstructionsPage.xbf">
+				<Candidate type="Path">
+					<Value>InstructionsPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MenuPage.xbf" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/MenuPage.xbf">
+				<Candidate type="Path">
+					<Value>MenuPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Ultimate_TicTacToe.Windows.xr.xml" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Ultimate_TicTacToe.Windows.xr.xml">
+				<Candidate type="Path">
+					<Value>Ultimate_TicTacToe.Windows.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="FormatFactoryNewSplashScreenLogo_Black_1.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactoryNewSplashScreenLogo_Black_1.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactoryNewSplashScreenLogo_Black_1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreen.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreen.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreen.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreenLogo_alpha_White.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreenLogo_alpha_White.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreenLogo_alpha_White.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreenLogo_alpha_White~1.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreenLogo_alpha_White~1.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreenLogo_alpha_White~1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreenLogo_alpha_White~2.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreenLogo_alpha_White~2.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreenLogo_alpha_White~2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreenLogo_alpha_White~3.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreenLogo_alpha_White~3.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreenLogo_alpha_White~3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreen~1.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreen~1.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreen~1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormatFactorySplashScreen~2.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/FormatFactorySplashScreen~2.png">
+					<Candidate type="Path">
+						<Value>Assets\FormatFactorySplashScreen~2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="rsz_newsplashscreenlogo_black.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/rsz_newsplashscreenlogo_black.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\rsz_newsplashscreenlogo_black.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreenLogo_alpha_Black.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/SplashScreenLogo_alpha_Black.png">
+					<Candidate type="Path">
+						<Value>Assets\SplashScreenLogo_alpha_Black.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreenLogo_alpha_White.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/SplashScreenLogo_alpha_White.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreenLogo_alpha_White.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TicTacToe Grid_2100x2100_thick_Blue.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/TicTacToe%20Grid_2100x2100_thick_Blue.png">
+					<Candidate type="Path">
+						<Value>Assets\TicTacToe Grid_2100x2100_thick_Blue.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TicTacToe Grid_2100x2100_thick_Indigo.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/TicTacToe%20Grid_2100x2100_thick_Indigo.png">
+					<Candidate type="Path">
+						<Value>Assets\TicTacToe Grid_2100x2100_thick_Indigo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TicTacToe Grid_2100x2100_thick_Pink.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/TicTacToe%20Grid_2100x2100_thick_Pink.png">
+					<Candidate type="Path">
+						<Value>Assets\TicTacToe Grid_2100x2100_thick_Pink.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TicTacToe Grid_2100x2100_thick_Red.png" uri="ms-resource://16e444b0-d7db-4439-8575-6778b9f6ea56/Files/Assets/TicTacToe%20Grid_2100x2100_thick_Red.png">
+					<Candidate type="Path">
+						<Value>Assets\TicTacToe Grid_2100x2100_thick_Red.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

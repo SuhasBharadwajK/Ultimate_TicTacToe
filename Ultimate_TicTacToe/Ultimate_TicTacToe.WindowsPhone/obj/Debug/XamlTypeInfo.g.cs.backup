@@ -13,13 +13,13 @@ namespace Ultimate_TicTacToe
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace Ultimate_TicTacToe
         {
             if(_provider == null)
             {
-                _provider = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace Ultimate_TicTacToe
     }
 }
 
-namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
+namespace Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -124,31 +124,17 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "Ultimate_TicTacToe.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Ultimate_TicTacToe.InstructionsPage";
-            _typeNameTable[4] = "Ultimate_TicTacToe.Common.ObservableDictionary";
-            _typeNameTable[5] = "Object";
-            _typeNameTable[6] = "String";
-            _typeNameTable[7] = "Ultimate_TicTacToe.Common.NavigationHelper";
-            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[9] = "Ultimate_TicTacToe.MainPage";
-            _typeNameTable[10] = "Ultimate_TicTacToe.MenuPage";
+            _typeNameTable[3] = "Ultimate_TicTacToe.MainPage";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::Ultimate_TicTacToe.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Ultimate_TicTacToe.InstructionsPage);
-            _typeTable[4] = typeof(global::Ultimate_TicTacToe.Common.ObservableDictionary);
-            _typeTable[5] = typeof(global::System.Object);
-            _typeTable[6] = typeof(global::System.String);
-            _typeTable[7] = typeof(global::Ultimate_TicTacToe.Common.NavigationHelper);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[9] = typeof(global::Ultimate_TicTacToe.MainPage);
-            _typeTable[10] = typeof(global::Ultimate_TicTacToe.MenuPage);
+            _typeTable[3] = typeof(global::Ultimate_TicTacToe.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -184,22 +170,12 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         }
 
         private object Activate_0_BlankPage1() { return new global::Ultimate_TicTacToe.BlankPage1(); }
-        private object Activate_3_InstructionsPage() { return new global::Ultimate_TicTacToe.InstructionsPage(); }
-        private object Activate_4_ObservableDictionary() { return new global::Ultimate_TicTacToe.Common.ObservableDictionary(); }
-        private object Activate_9_MainPage() { return new global::Ultimate_TicTacToe.MainPage(); }
-        private object Activate_10_MenuPage() { return new global::Ultimate_TicTacToe.MenuPage(); }
-        private void MapAdd_4_ObservableDictionary(object instance, object key, object item)
-        {
-            var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
-            var newKey = (global::System.String)key;
-            var newItem = (global::System.Object)item;
-            collection.Add(newKey, newItem);
-        }
+        private object Activate_3_MainPage() { return new global::Ultimate_TicTacToe.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType userType;
+            global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -207,66 +183,23 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
             {
 
             case 0:   //  Ultimate_TicTacToe.BlankPage1
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Ultimate_TicTacToe.InstructionsPage
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_InstructionsPage;
-                userType.AddMemberName("DefaultViewModel");
-                userType.AddMemberName("NavigationHelper");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Ultimate_TicTacToe.Common.ObservableDictionary
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_4_ObservableDictionary;
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  Object
-                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  String
-                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Ultimate_TicTacToe.Common.NavigationHelper
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  Ultimate_TicTacToe.MainPage
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 10:   //  Ultimate_TicTacToe.MenuPage
-                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MenuPage;
+            case 3:   //  Ultimate_TicTacToe.MainPage
+                userType = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -275,37 +208,11 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         }
 
 
-        private object get_0_InstructionsPage_DefaultViewModel(object instance)
-        {
-            var that = (global::Ultimate_TicTacToe.InstructionsPage)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_1_InstructionsPage_NavigationHelper(object instance)
-        {
-            var that = (global::Ultimate_TicTacToe.InstructionsPage)instance;
-            return that.NavigationHelper;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlMember xamlMember = null;
-            global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "Ultimate_TicTacToe.InstructionsPage.DefaultViewModel":
-                userType = (global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Ultimate_TicTacToe.InstructionsPage");
-                xamlMember = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Ultimate_TicTacToe.Common.ObservableDictionary");
-                xamlMember.Getter = get_0_InstructionsPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Ultimate_TicTacToe.InstructionsPage.NavigationHelper":
-                userType = (global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Ultimate_TicTacToe.InstructionsPage");
-                xamlMember = new global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Ultimate_TicTacToe.Common.NavigationHelper");
-                xamlMember.Getter = get_1_InstructionsPage_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            }
+            global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlMember xamlMember = null;
+            // No Local Properties
             return xamlMember;
         }
     }
@@ -361,9 +268,9 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlSystemBaseType
     {
-        global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -377,7 +284,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -570,7 +477,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -579,7 +486,7 @@ namespace Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::Ultimate_TicTacToe.Ultimate_TicTacToe_Windows_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::Ultimate_TicTacToe.Ultimate_TicTacToe_WindowsPhone_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

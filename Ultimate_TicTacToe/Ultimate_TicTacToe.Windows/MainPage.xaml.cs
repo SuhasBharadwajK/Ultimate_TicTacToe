@@ -898,7 +898,6 @@ namespace Ultimate_TicTacToe
                 Frame.GoBack();
             }
         }
-
         private async void backButton_Click(object sender, RoutedEventArgs e)
         {
             //Frame.GoBack();

@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-180"
+"ResourceDimensions"		"scale-180"
+
+[Files]
+"C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\split.scale-180.pri"			"resources.pri"
+"C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.Windows\obj\Debug\PackageLayout\Assets\SplashScreen.scale-180.png"			"Assets\SplashScreen.scale-180.png"

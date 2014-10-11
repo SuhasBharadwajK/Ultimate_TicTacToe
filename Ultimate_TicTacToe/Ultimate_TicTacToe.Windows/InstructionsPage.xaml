@@ -42,11 +42,92 @@
                         VerticalAlignment="Top"
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button" Click="backButton_Click">
-                <ScrollBar Height="100" Width="100"/>
-            </Button>
+                        AutomationProperties.ItemType="Navigation Button" Click="backButton_Click"/>
             <TextBlock x:Name="pageTitle" Text="The Ultimate Tic-Tac-Toe" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="500" Grid.Row="1" VerticalAlignment="Top" Width="1600" VerticalScrollBarVisibility="Visible" AllowDrop="False" Margin="0,0,-4002,-1094" FontSize="100" HorizontalScrollMode="Enabled"  HorizontalScrollBarVisibility="Visible" Padding="150,50,0,0" Canvas.ZIndex="15">
+            <StackPanel x:Name="StackPanelH" Orientation="Horizontal">
+                <StackPanel x:Name="StackPanelV" Orientation="Vertical">
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <!--<ScrollBar HorizontalAlignment="Left" Margin="1349,38,0,0" Grid.Row="1" VerticalAlignment="Top"/>-->
+                </StackPanel>
+                <StackPanel x:Name="StackPanel" Orientation="Vertical">
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <!--<ScrollBar HorizontalAlignment="Left" Margin="1349,38,0,0" Grid.Row="1" VerticalAlignment="Top"/>-->
+                </StackPanel>
+                <StackPanel x:Name="StackPanel1" Orientation="Vertical">
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <TextBlock Canvas.ZIndex="-15">Suhas Bharadwaj</TextBlock>
+                    <!--<ScrollBar HorizontalAlignment="Left" Margin="1349,38,0,0" Grid.Row="1" VerticalAlignment="Top"/>-->
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollBar HorizontalAlignment="Left" Height="0" Margin="567,411,0,0" Grid.Row="1" VerticalAlignment="Top" Width="127"/>
     </Grid>
 </Page>

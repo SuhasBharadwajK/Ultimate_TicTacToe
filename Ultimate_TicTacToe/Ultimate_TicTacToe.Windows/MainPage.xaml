@@ -122,7 +122,7 @@
         <TextBlock x:Name="FinalWinBlock_3x2" HorizontalAlignment="Left" Margin="578,520,0,0" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="215" Width="233" Canvas.ZIndex="-10" />
         <TextBlock x:Name="FinalWinBlock_3x1" HorizontalAlignment="Left" Margin="334,523,0,0" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="215" Width="233" Canvas.ZIndex="-10" />
         <TextBlock x:Name="Victorious" HorizontalAlignment="Left" Height="722" Margin="324,-35,0,0" TextWrapping="Wrap" Text="" FontSize="790" TextAlignment="Center" VerticalAlignment="Top" Width="735" Canvas.ZIndex="-15"/>
-        <Button x:Name="ResetButton" Content="Play Again" HorizontalAlignment="Left" Margin="1164,503,0,0" VerticalAlignment="Top" Click="ResetButton_Click" Opacity="0" IsEnabled="False"/>
+        <Button x:Name="ResetButton" Content="Play Again!" HorizontalAlignment="Left" Margin="1164,503,0,0" VerticalAlignment="Top" Click="ResetButton_Click" Opacity="0" IsEnabled="False"/>
         <Button x:Name="backButton" Margin="58,49,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
         	Style="{StaticResource NavigationBackButtonNormalStyle}"
         	VerticalAlignment="Top"

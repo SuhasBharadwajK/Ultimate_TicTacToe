@@ -28,7 +28,6 @@ namespace Ultimate_TicTacToe
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
-
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -95,7 +94,7 @@ namespace Ultimate_TicTacToe
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(MenuPage), e.Arguments))
+                if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }

@@ -5,11 +5,1044 @@
     xmlns:local="using:Ultimate_TicTacToe"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+	<Page.Resources>
+		<Storyboard
+	x:Name="Storyboard_Selection">
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="ButtonX" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="525" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="ButtonX" Storyboard.TargetProperty="(UIElement.Opacity)" To="0" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="ButtonY" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-695" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="ButtonY" Storyboard.TargetProperty="(UIElement.Opacity)" To="0" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="StatusBlock" Storyboard.TargetProperty="(UIElement.Opacity)" To="0" Duration="0:0:0.6"/>
+	<ObjectAnimationUsingKeyFrames
+	Storyboard.TargetProperty="(Canvas.ZIndex)" Storyboard.TargetName="StatusBlock">
+	<DiscreteObjectKeyFrame
+	KeyTime="0:0:0.6">
+	<DiscreteObjectKeyFrame.Value
+	>
+	<x:Int32
+	>-50</x:Int32>
+	</DiscreteObjectKeyFrame.Value>
+	</DiscreteObjectKeyFrame>
+	</ObjectAnimationUsingKeyFrames>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="MainGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="WinnerBox" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-6" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Victorious" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="-678.667" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="MainGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_1x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_2x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x1_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x2_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Grid_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="TextBlock_3x3_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Back_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_1x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_2x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x3" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x2" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="FinalWinBlock_3x1" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+	<DoubleAnimation
+	d:IsOptimized="True" Storyboard.TargetName="Victorious" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3" Duration="0:0:0.6"/>
+		</Storyboard>
+	</Page.Resources>
 
-    <Grid>
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.51,0.518">
+        <Image x:Name="MainGrid" HorizontalAlignment="Left" Height="361" Margin="20,762,0,-483" VerticalAlignment="Top" Width="368" Source="Assets/TicTacToe Grid_2100x2100_thick_Red.png" RenderTransformOrigin="0.505,0.492" Canvas.ZIndex="3">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="Grid_1x1" HorizontalAlignment="Left" Height="122" Margin="22,763,0,-245" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='1' x:Name="TextBlock_1x1_1x1"                               HorizontalAlignment="Left" Margin="29,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='2' x:Name="TextBlock_1x1_1x2"                               HorizontalAlignment="Left" Margin="66,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='3' x:Name="TextBlock_1x1_1x3"                               HorizontalAlignment="Left" Margin="102,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='4' x:Name="TextBlock_1x1_2x1"                               HorizontalAlignment="Left" Margin="29,807,0,-199" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='5' x:Name="TextBlock_1x1_2x2"                               HorizontalAlignment="Left" Margin="66,808,0,-200" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='6' x:Name="TextBlock_1x1_2x3"                               HorizontalAlignment="Left" Margin="102,807,0,-199" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='7' x:Name="TextBlock_1x1_3x1"                               HorizontalAlignment="Left" Margin="29,847,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='8' x:Name="TextBlock_1x1_3x2"                               HorizontalAlignment="Left" Margin="66,847,0,-238" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.457,0.465">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='9' x:Name="TextBlock_1x1_3x3"                               HorizontalAlignment="Left" Margin="102,847,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_1x2" HorizontalAlignment="Left" Height="122" Margin="144,763,0,-245" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='10' x:Name="TextBlock_1x2_1x1"                               HorizontalAlignment="Left" Margin="151,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='11' x:Name="TextBlock_1x2_1x2"                               HorizontalAlignment="Left" Margin="188,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='12' x:Name="TextBlock_1x2_1x3"                               HorizontalAlignment="Left" Margin="224,771,0,-162" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='13' x:Name="TextBlock_1x2_2x1"                               HorizontalAlignment="Left" Margin="150,808,0,-200" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='14' x:Name="TextBlock_1x2_2x2"                               HorizontalAlignment="Left" Margin="188,807,0,-198" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='15' x:Name="TextBlock_1x2_2x3"                               HorizontalAlignment="Left" Margin="224,808,0,-200" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='16' x:Name="TextBlock_1x2_3x1"                               HorizontalAlignment="Left" Margin="150,846,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='17' x:Name="TextBlock_1x2_3x2"                               HorizontalAlignment="Left" Margin="188,847,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='18' x:Name="TextBlock_1x2_3x3"                               HorizontalAlignment="Left" Margin="224,846,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_1x3" HorizontalAlignment="Left" Height="122" Margin="268,763,0,-245" VerticalAlignment="Top" Width="118" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='19' x:Name="TextBlock_1x3_1x1"                               HorizontalAlignment="Left" Margin="276,772,0,-163" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='20' x:Name="TextBlock_1x3_1x2"                               HorizontalAlignment="Left" Margin="312,772,0,-163" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='21' x:Name="TextBlock_1x3_1x3"                               HorizontalAlignment="Left" Margin="349,772,0,-164" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='22' x:Name="TextBlock_1x3_2x1"                               HorizontalAlignment="Left" Margin="275,807,0,-198" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='23' x:Name="TextBlock_1x3_2x2"                               HorizontalAlignment="Left" Margin="312,807,0,-198" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='24' x:Name="TextBlock_1x3_2x3"                               HorizontalAlignment="Left" Margin="349,807,0,-198" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='25' x:Name="TextBlock_1x3_3x1"                               HorizontalAlignment="Left" Margin="275,846,0,-237" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='26' x:Name="TextBlock_1x3_3x2"                               HorizontalAlignment="Left" Margin="312,845,0,-236" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='27' x:Name="TextBlock_1x3_3x3"                               HorizontalAlignment="Left" Margin="349,845,0,-236" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_2x1" HorizontalAlignment="Left" Height="122" Margin="22,890,0,-372" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='28' x:Name="TextBlock_2x1_1x1"                               HorizontalAlignment="Left" Margin="28,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='29' x:Name="TextBlock_2x1_1x2"                               HorizontalAlignment="Left" Margin="67,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='30' x:Name="TextBlock_2x1_1x3"                               HorizontalAlignment="Left" Margin="103,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='31' x:Name="TextBlock_2x1_2x1"                               HorizontalAlignment="Left" Margin="29,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='32' x:Name="TextBlock_2x1_2x2"                               HorizontalAlignment="Left" Margin="66,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='33' x:Name="TextBlock_2x1_2x3"                               HorizontalAlignment="Left" Margin="103,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='34' x:Name="TextBlock_2x1_3x1"                               HorizontalAlignment="Left" Margin="29,972,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='35' x:Name="TextBlock_2x1_3x2"                               HorizontalAlignment="Left" Margin="66,973,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='36' x:Name="TextBlock_2x1_3x3"                               HorizontalAlignment="Left" Margin="102,972,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_2x2" HorizontalAlignment="Left" Height="122" Margin="144,890,0,-372" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='37' x:Name="TextBlock_2x2_1x1"                               HorizontalAlignment="Left" Margin="151,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='38' x:Name="TextBlock_2x2_1x2"                               HorizontalAlignment="Left" Margin="188,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='39' x:Name="TextBlock_2x2_1x3"                               HorizontalAlignment="Left" Margin="224,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='40' x:Name="TextBlock_2x2_2x1"                               HorizontalAlignment="Left" Margin="152,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='41' x:Name="TextBlock_2x2_2x2"                               HorizontalAlignment="Left" Margin="188,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='42' x:Name="TextBlock_2x2_2x3"                               HorizontalAlignment="Left" Margin="224,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='43' x:Name="TextBlock_2x2_3x1"                               HorizontalAlignment="Left" Margin="151,973,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='44' x:Name="TextBlock_2x2_3x2"                               HorizontalAlignment="Left" Margin="188,973,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='45' x:Name="TextBlock_2x2_3x3"                               HorizontalAlignment="Left" Margin="224,972,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_2x3" HorizontalAlignment="Left" Height="122" Margin="268,890,0,-372" VerticalAlignment="Top" Width="118" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='46' x:Name="TextBlock_2x3_1x1"                               HorizontalAlignment="Left" Margin="275,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='47' x:Name="TextBlock_2x3_1x2"                               HorizontalAlignment="Left" Margin="312,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='48' x:Name="TextBlock_2x3_1x3"                               HorizontalAlignment="Left" Margin="349,898,0,-289" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='49' x:Name="TextBlock_2x3_2x1"                               HorizontalAlignment="Left" Margin="275,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='50' x:Name="TextBlock_2x3_2x2"                               HorizontalAlignment="Left" Margin="312,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='51' x:Name="TextBlock_2x3_2x3"                               HorizontalAlignment="Left" Margin="349,935,0,-326" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='52' x:Name="TextBlock_2x3_3x1"                               HorizontalAlignment="Left" Margin="274,972,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='53' x:Name="TextBlock_2x3_3x2"                               HorizontalAlignment="Left" Margin="312,973,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='54' x:Name="TextBlock_2x3_3x3"                               HorizontalAlignment="Left" Margin="349,973,0,-363" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_3x1" HorizontalAlignment="Left" Height="121" Margin="22,1010,0,-491" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='55' x:Name="TextBlock_3x1_1x1"                               HorizontalAlignment="Left" Margin="29,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='56' x:Name="TextBlock_3x1_1x2"                               HorizontalAlignment="Left" Margin="66,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='57' x:Name="TextBlock_3x1_1x3"                               HorizontalAlignment="Left" Margin="102,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='58' x:Name="TextBlock_3x1_2x1"                               HorizontalAlignment="Left" Margin="29,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='59' x:Name="TextBlock_3x1_2x2"                               HorizontalAlignment="Left" Margin="66,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='60' x:Name="TextBlock_3x1_2x3"                               HorizontalAlignment="Left" Margin="103,1054,0,-445" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='61' x:Name="TextBlock_3x1_3x1"                               HorizontalAlignment="Left" Margin="29,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='62' x:Name="TextBlock_3x1_3x2"                               HorizontalAlignment="Left" Margin="66,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='63' x:Name="TextBlock_3x1_3x3"                               HorizontalAlignment="Left" Margin="102,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_3x2" HorizontalAlignment="Left" Height="121" Margin="144,1010,0,-491" VerticalAlignment="Top" Width="119" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='64' x:Name="TextBlock_3x2_1x1"                               HorizontalAlignment="Left" Margin="151,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='65' x:Name="TextBlock_3x2_1x2"                               HorizontalAlignment="Left" Margin="188,1018,0,-408" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='66' x:Name="TextBlock_3x2_1x3"                               HorizontalAlignment="Left" Margin="224,1018,0,-408" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='67' x:Name="TextBlock_3x2_2x1"                               HorizontalAlignment="Left" Margin="151,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='68' x:Name="TextBlock_3x2_2x2"                               HorizontalAlignment="Left" Margin="188,1055,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='69' x:Name="TextBlock_3x2_2x3"                               HorizontalAlignment="Left" Margin="224,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='70' x:Name="TextBlock_3x2_3x1"                               HorizontalAlignment="Left" Margin="151,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='71' x:Name="TextBlock_3x2_3x2"                               HorizontalAlignment="Left" Margin="188,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='72' x:Name="TextBlock_3x2_3x3"                               HorizontalAlignment="Left" Margin="224,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Image x:Name="Grid_3x3" HorizontalAlignment="Left" Height="121" Margin="268,1010,0,-491" VerticalAlignment="Top" Width="118" Source="Assets/TicTacToe Grid_2100x2100_thick_Blue.png" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+        <TextBlock x:ConnectionId='73' x:Name="TextBlock_3x3_1x1"                               HorizontalAlignment="Left" Margin="275,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='74' x:Name="TextBlock_3x3_1x2"                               HorizontalAlignment="Left" Margin="312,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='75' x:Name="TextBlock_3x3_1x3"                               HorizontalAlignment="Left" Margin="348,1018,0,-409" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='76' x:Name="TextBlock_3x3_2x1"                               HorizontalAlignment="Left" Margin="275,1055,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='77' x:Name="TextBlock_3x3_2x2"                               HorizontalAlignment="Left" Margin="312,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='78' x:Name="TextBlock_3x3_2x3"                               HorizontalAlignment="Left" Margin="349,1054,0,-446" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='79' x:Name="TextBlock_3x3_3x1"                               HorizontalAlignment="Left" Margin="275,1092,0,-483" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='80' x:Name="TextBlock_3x3_3x2"                               HorizontalAlignment="Left" Margin="312,1093,0,-484" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="31"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='81' x:Name="TextBlock_3x3_3x3"                               HorizontalAlignment="Left" Margin="349,1093,0,-484" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="32"  FontSize="30" Text="" TextAlignment="Center" Canvas.ZIndex="3" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:ConnectionId='82' x:Name="ButtonX" Content="X" HorizontalAlignment="Left" Margin="130,49,0,0" VerticalAlignment="Top"                       Height="180" Width="150" FontSize="100" RenderTransformOrigin="0.5,0.5">
+        	<Button.RenderTransform>
+        		<CompositeTransform/>
+        	</Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='83' x:Name="ButtonY" Content="O" HorizontalAlignment="Left" Margin="130,408,0,0" VerticalAlignment="Top"                       Height="180" Width="150" FontSize="100" RenderTransformOrigin="0.5,0.5">
+        	<Button.RenderTransform>
+        		<CompositeTransform/>
+        	</Button.RenderTransform>
+        </Button>
+        <Rectangle x:ConnectionId='84' x:Name="Back_3x3" Fill="#46cedb"  HorizontalAlignment="Left" Height="106" Margin="268,1016,0,-482" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='85' x:Name="Back_3x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="106" Margin="145,1016,0,-482" Stroke="Black" VerticalAlignment="Top" Width="115" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='86' x:Name="Back_3x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="106" Margin="22,1016,0,-482" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='87' x:Name="Back_2x3" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="268,891,0,-368" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='88' x:Name="Back_2x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="145,891,0,-368" Stroke="Black" VerticalAlignment="Top" Width="115" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='89' x:Name="Back_2x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="22,891,0,-368" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='90' x:Name="Back_1x3" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="268,765,0,-242" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='91' x:Name="Back_1x2" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="145,765,0,-242" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:ConnectionId='92' x:Name="Back_1x1" Fill="#46cedb"  HorizontalAlignment="Left" Height="117" Margin="22,765,0,-242" Stroke="Black" VerticalAlignment="Top" Width="116" Opacity="0"                          RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<CompositeTransform/>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="StatusBlock" HorizontalAlignment="Left" Margin="10,281,0,0" TextWrapping="Wrap" Text="Choose X or O" TextAlignment="Center" FontSize="30" VerticalAlignment="Top" Height="77" Width="380"/>
+        <TextBlock x:Name="WinnerBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="174" FontSize="30" TextAlignment="Center" Canvas.Left="1170" Canvas.Top="236" Margin="346,948,-120,-372" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_1x3" HorizontalAlignment="Left" Margin="269,768,0,-238" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_1x2" HorizontalAlignment="Left" Margin="145,768,0,-238" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="116" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_1x1" HorizontalAlignment="Left" Margin="22,768,0,-238" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_2x1" HorizontalAlignment="Left" Margin="22,894,0,-364" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_2x2" HorizontalAlignment="Left" Margin="144,896,0,-366" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_2x3" HorizontalAlignment="Left" Margin="267,894,0,-364" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="110" Width="118" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_3x3" HorizontalAlignment="Left" Margin="268,1015,0,-484" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="109" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_3x2" HorizontalAlignment="Left" Margin="145,1013,0,-484" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="111" Width="117" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="FinalWinBlock_3x1" HorizontalAlignment="Left" Margin="22,1015,0,-484" TextWrapping="Wrap" Text="" FontSize="200" TextAlignment="Center" VerticalAlignment="Top" Height="109" Width="118" Canvas.ZIndex="-10" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="Victorious" HorizontalAlignment="Left" Height="369" Margin="20,762,0,-491" TextWrapping="Wrap" Text="" FontSize="790" TextAlignment="Center" VerticalAlignment="Top" Width="366" Canvas.ZIndex="-15" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <Button x:ConnectionId='93' x:Name="ResetButton" Content="Play Again!" HorizontalAlignment="Left" Margin="1164,503,0,0" VerticalAlignment="Top"                           Opacity="0" IsEnabled="False"/>
     </Grid>
 </Page>
 
