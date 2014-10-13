@@ -33889,7 +33889,6 @@
                 <CompositeTransform/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <Button x:Name="ResetButton" Content="Play Again!" HorizontalAlignment="Left" Margin="1164,503,0,0" VerticalAlignment="Top" Click="ResetButton_Click" Opacity="0" IsEnabled="False"/>
-        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="148,-10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="ResetButton" Content="Play Again!" HorizontalAlignment="Left" Margin="142,527,0,0" VerticalAlignment="Top" Click="ResetButton_Click" Opacity="0" IsEnabled="False"/>
     </Grid>
 </Page>

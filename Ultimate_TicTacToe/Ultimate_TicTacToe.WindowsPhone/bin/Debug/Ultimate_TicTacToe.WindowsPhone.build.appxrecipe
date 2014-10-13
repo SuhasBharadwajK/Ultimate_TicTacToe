@@ -43,40 +43,89 @@
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\FormatFactorySplashScreen~2.png">
       <PackagePath>Assets\FormatFactorySplashScreen~2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon106.png">
+      <PackagePath>Assets\Icon106.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon150.scale-100.png">
+      <PackagePath>Assets\Icon150.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon150.scale-140.png">
+      <PackagePath>Assets\Icon150.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon150.scale-240.png">
+      <PackagePath>Assets\Icon150.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon210.png">
+      <PackagePath>Assets\Icon210.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon360.png">
+      <PackagePath>Assets\Icon360.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Icon62.png">
+      <PackagePath>Assets\Icon62.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\rsz_newsplashscreenlogo_black.scale-100.png">
       <PackagePath>Assets\rsz_newsplashscreenlogo_black.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon.scale-100.png">
+      <PackagePath>Assets\SmallIcon.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon.scale-140.png">
+      <PackagePath>Assets\SmallIcon.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon.scale-240.png">
+      <PackagePath>Assets\SmallIcon.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon170.scale-100.png">
+      <PackagePath>Assets\SmallIcon170.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon170.scale-140.png">
+      <PackagePath>Assets\SmallIcon170.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon170.scale-240.png">
+      <PackagePath>Assets\SmallIcon170.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon71.png">
+      <PackagePath>Assets\SmallIcon71.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallIcon99.png">
+      <PackagePath>Assets\SmallIcon99.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SpalshScreen_Blue.png">
+      <PackagePath>Assets\SpalshScreen_Blue.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreen.scale-140.png">
       <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreen.scale-180.png">
       <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreenLogo_alpha_Black.png">
       <PackagePath>Assets\SplashScreenLogo_alpha_Black.png</PackagePath>
@@ -84,9 +133,12 @@
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreenLogo_alpha_White.scale-100.png">
       <PackagePath>Assets\SplashScreenLogo_alpha_White.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SplashScreen_Blue.scale-100.png">
+      <PackagePath>Assets\SplashScreen_Blue.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
@@ -111,6 +163,9 @@
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\Assets\SpalshScreen_Blue.ico">
+      <PackagePath>Assets\SpalshScreen_Blue.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Suhas\documents\visual studio 2013\Projects\Ultimate_TicTacToe\Ultimate_TicTacToe\Ultimate_TicTacToe.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>

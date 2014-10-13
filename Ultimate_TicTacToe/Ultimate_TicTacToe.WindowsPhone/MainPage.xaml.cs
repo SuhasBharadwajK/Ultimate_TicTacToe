@@ -119,6 +119,7 @@ namespace Ultimate_TicTacToe
 
         public void Played( int r, int s, int p, int q )
         {
+            ((global::Windows.UI.Xaml.Media.Animation.Storyboard)this.FindName("SB_" + r + "x" + s + "_Reverse")).Begin();
             int sum = p + q;
             if (sum % 4 == 0) //1x3 and 3x1
             {
@@ -374,10 +375,10 @@ namespace Ultimate_TicTacToe
             else
             {
                 ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).IsTapEnabled = true;
-                Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)), 0);
+                Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)), 1000);
                 ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + p + "x" + q)).Opacity = 0.15;
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + p + "x" + q)).IsTapEnabled = false;
-                Activate(p, q);
+                //Activate(p, q);
             }
         }
 
@@ -680,14 +681,15 @@ namespace Ultimate_TicTacToe
             {
                 for (int j = 1; j <= 3; j++)
                 {
-                    ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
+                    //((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
                     ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Visibility = Visibility.Collapsed;
+                    ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Visibility = Visibility.Collapsed;
                     ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_"  + i + "x" + j)).Opacity = 0;
                     for (int k = 1; k <= 3; k++)
                     {
                         for (int l = 1; l <= 3; l++)
                         {
-                            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).Opacity = 0;
+                            ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).Visibility = Visibility.Collapsed;
                         }
                     }
                 }   
@@ -695,8 +697,8 @@ namespace Ultimate_TicTacToe
             Victory = 1;
             if (GrandWinner == 1)
             {
-                StatusBlock.Text = "";
-                WinnerBox.Text = "X wins the game!";
+                StatusBlock.Text = "X wins the game!";
+                //WinnerBox.Text = "X wins the game!";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "X";
             }
             else if (GrandWinner == 2)
@@ -724,72 +726,81 @@ namespace Ultimate_TicTacToe
         {
             NullOpacity();
             Canvas.SetZIndex(Back_1x1, 0);
-            Back_1x1.Opacity = 0.15;
+            Back_1x1.Opacity = 0;
             Activate(1, 1);
+            SB_1x1.Begin();
         }
 
         private void Back_1x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_1x2, 0);
-            Back_1x2.Opacity = 0.15;
+            Back_1x2.Opacity = 0;
             Activate(1, 2);
+            SB_1x2.Begin();
         }
 
         private void Back_1x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_1x3, 0);
-            Back_1x3.Opacity = 0.15;
+            Back_1x3.Opacity = 0;
             Activate(1, 3);
+            SB_1x3.Begin();
         }
 
         private void Back_2x1_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_2x1, 0);
-            Back_2x1.Opacity = 0.15;
+            Back_2x1.Opacity = 0;
             Activate(2, 1);
+            SB_2x1.Begin();
         }
 
         private void Back_2x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_2x2, 0);
-            Back_2x2.Opacity = 0.15;
+            Back_2x2.Opacity = 0;
             Activate(2, 2);
+            SB_2x2.Begin();
         }
 
         private void Back_2x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_2x3, 0);
-            Back_2x3.Opacity = 0.15;
+            Back_2x3.Opacity = 0;
             Activate(2, 3);
+            SB_2x3.Begin();
         }
 
         private void Back_3x1_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_3x1, 0);
-            Back_3x1.Opacity = 0.15;
+            Back_3x1.Opacity = 0;
             Activate(3, 1);
+            SB_3x1.Begin();
         }
 
         private void Back_3x2_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_3x2, 0);
-            Back_3x2.Opacity = 0.15;
+            Back_3x2.Opacity = 0;
             Activate(3, 2);
+            SB_3x2.Begin();
         }
 
         private void Back_3x3_Tapped(object sender, TappedRoutedEventArgs e)
         {
             NullOpacity();
             Canvas.SetZIndex(Back_3x3, 0);
-            Back_3x3.Opacity = 0.15;
+            Back_3x3.Opacity = 0;
             Activate(3, 3);
+            SB_3x3.Begin();
         }
 
         private void TextBlock_1x1_Tapped(object sender, TappedRoutedEventArgs e)
@@ -901,7 +912,7 @@ namespace Ultimate_TicTacToe
             Frame.GoBack(); 
         }
 
-        bool zoomin = false;
+        /*bool zoomin = false;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -915,7 +926,7 @@ namespace Ultimate_TicTacToe
                 SB_1x1_Reverse.Begin();
                 zoomin = false;
             }
-        }
+        }*/
 
         /*private void CommandInvokedHandler(IUICommand command)
         {
