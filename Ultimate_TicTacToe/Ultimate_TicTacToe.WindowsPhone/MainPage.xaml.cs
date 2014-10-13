@@ -901,6 +901,22 @@ namespace Ultimate_TicTacToe
             Frame.GoBack(); 
         }
 
+        bool zoomin = false;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (!zoomin)
+            {
+                SB_1x1.Begin();
+                zoomin = true;
+            }
+            else
+            {
+                SB_1x1_Reverse.Begin();
+                zoomin = false;
+            }
+        }
+
         /*private void CommandInvokedHandler(IUICommand command)
         {
             //throw new NotImplementedException();
