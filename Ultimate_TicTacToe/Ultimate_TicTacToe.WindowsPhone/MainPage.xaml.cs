@@ -68,7 +68,7 @@ namespace Ultimate_TicTacToe
             {
                 for (int j = 1; j <= 3; j++)
                 {
-                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
+                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 100);
                 }
             }
             ButtonY.IsEnabled = false;
@@ -84,7 +84,7 @@ namespace Ultimate_TicTacToe
             {
                 for (int j = 1; j <= 3; j++)
                 {
-                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
+                    Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 100);
                 }
             }
             ButtonX.IsEnabled = false;
@@ -119,7 +119,20 @@ namespace Ultimate_TicTacToe
 
         public void Played( int r, int s, int p, int q )
         {
+            NullifyAll();
             ((global::Windows.UI.Xaml.Media.Animation.Storyboard)this.FindName("SB_" + r + "x" + s + "_Reverse")).Begin();
+            /*if ((winner[0, s - 1] == 1 || winner[0, s - 1] == 2 || winner[0, s - 1] == 3))
+            {
+                ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_1x" + s)).Opacity = 0;
+                ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_1x" + s)).Opacity = 0;
+                for (int i = 1; i <= 3; i++)
+                {
+                    for (int j = 1; j <= 3; j++)
+                    {
+                        ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_1x" + s + "_" + i + "x" + j)).Opacity = 0;
+                    }
+                }
+            }*/
             int sum = p + q;
             if (sum % 4 == 0) //1x3 and 3x1
             {
@@ -392,7 +405,7 @@ namespace Ultimate_TicTacToe
                     if (winner[i - 1, j - 1] == 0)
                     {
                         ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).IsTapEnabled = true;
-                        Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 10);
+                        Canvas.SetZIndex(((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)), 100);
                          ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Opacity = 0.15;
                     }
                 }
@@ -411,12 +424,12 @@ namespace Ultimate_TicTacToe
         public void Won(int r, int s, int p, int q, string pen)
         {
             Vacancy--;
-            ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + r + "x" + s)).Opacity = 0;
+            ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + r + "x" + s)).Visibility = Visibility.Collapsed;
             for (int i = 1; i <= 3; i++)
             {
                 for (int j = 1; j <= 3; j++)
                 {
-                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Opacity = 0;
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + r + "x" + s + "_" + i + "x" + j)).Visibility = Visibility.Collapsed;
                 }   
             }
 
@@ -650,8 +663,7 @@ namespace Ultimate_TicTacToe
             if (Victory == 0 && Vacancy == 0)
             {
                 ((Windows.UI.Xaml.Controls.Image)this.FindName("MainGrid")).Opacity = 0;
-                WinnerBox.Text = "The match tied!";
-                StatusBlock.Text = "";
+                StatusBlock.Text = "The match tied!";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "!";
                 ResetButton.IsEnabled = true;
                 ResetButton.Opacity = 1;
@@ -703,8 +715,8 @@ namespace Ultimate_TicTacToe
             }
             else if (GrandWinner == 2)
             {
-                WinnerBox.Text = "O wins the game!";
-                StatusBlock.Text = "";
+                StatusBlock.Text = "O wins the game!";
+                //StatusBlock.Text = "";
                 ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("Victorious")).Text = "O";
             }
             ResetButton.IsEnabled = true;
@@ -728,7 +740,7 @@ namespace Ultimate_TicTacToe
             Canvas.SetZIndex(Back_1x1, 0);
             Back_1x1.Opacity = 0;
             Activate(1, 1);
-            SB_1x1.Begin();
+            SB_1x1.Begin();   
         }
 
         private void Back_1x2_Tapped(object sender, TappedRoutedEventArgs e)
@@ -737,7 +749,7 @@ namespace Ultimate_TicTacToe
             Canvas.SetZIndex(Back_1x2, 0);
             Back_1x2.Opacity = 0;
             Activate(1, 2);
-            SB_1x2.Begin();
+            SB_1x2.Begin();            
         }
 
         private void Back_1x3_Tapped(object sender, TappedRoutedEventArgs e)
@@ -801,6 +813,7 @@ namespace Ultimate_TicTacToe
             Back_3x3.Opacity = 0;
             Activate(3, 3);
             SB_3x3.Begin();
+            
         }
 
         private void TextBlock_1x1_Tapped(object sender, TappedRoutedEventArgs e)
