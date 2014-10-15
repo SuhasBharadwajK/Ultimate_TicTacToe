@@ -696,7 +696,7 @@ namespace Ultimate_TicTacToe
                     //((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Opacity = 0;
                     ((Windows.UI.Xaml.Shapes.Rectangle)this.FindName("Back_" + i + "x" + j)).Visibility = Visibility.Collapsed;
                     ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + i + "x" + j)).Visibility = Visibility.Collapsed;
-                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_"  + i + "x" + j)).Opacity = 0;
+                    ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("FinalWinBlock_" + i + "x" + j)).Visibility = Visibility.Collapsed;
                     for (int k = 1; k <= 3; k++)
                     {
                         for (int l = 1; l <= 3; l++)
