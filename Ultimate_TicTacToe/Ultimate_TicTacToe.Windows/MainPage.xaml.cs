@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,9 +26,9 @@ namespace Ultimate_TicTacToe
     public sealed partial class MainPage : Page
     {
 
-        public MainPage()
+        public MainPage() /*Application is loaded and execution starts here.*/
         {
-            this.InitializeComponent();
+            this.InitializeComponent(); /*All the components of the application are initialized.*/
             for (int i = 1; i <= 3; i++)
             {
                 for (int j = 1; j <= 3; j++)
@@ -37,23 +37,23 @@ namespace Ultimate_TicTacToe
                     {
                         for (int l = 1; l <= 3; l++)
                         {
-                            ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).IsTapEnabled = false;
+                            ((global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + i + "x" + j + "_" + k + "x" + l)).IsTapEnabled = false; //The tapping event handler of all the text boxes is disabled.
                         }
                     }
                 }
             }
         }
 
-        string pen = "";
-        int[,] winner = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        string pen = ""; //The pen that holds the symbol of current player.
+        int[,] winner = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }; //A 3x3 matrix that siginifies the main grid. If a player wins in a grid in the main grid, the corresponding value in the matrix is made 1.
         int countX = 0;
         int countY = 0;
-        int[,] IndieCountX = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
-        int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
-        int Vacancy = 9;
-        int Victory = 0;
+        int[,] IndieCountX = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }; //Number of X's in each grid in the main grid is stored in this 3x3 array.
+        int[,] IndieCountY = new int[,] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } }; //Number of Y's in each grid in the main grid is stored in this 3x3 array.
+        int Vacancy = 9; //The total number of playable grids. At the start of the game, all the grids are empty. So, this value is 9.
+        int Victory = 0; //The victory flag. This flag is set to 1 when either of the players wins the game. If this value is 0 and the vacancy becomes 0, then the game is obviously a draw.
 
-        private void ButtonX_Click(object sender, RoutedEventArgs e)
+        private void ButtonX_Click(object sender, RoutedEventArgs e) //This is executed when the button X is clicked. The symbol for the first player becomes X.
         {
             for (int i = 1; i <= 3; i++)
             {
@@ -68,7 +68,7 @@ namespace Ultimate_TicTacToe
             StatusBlock.Text = pen + "'s turn";
         }
 
-        private void ButtonY_Click(object sender, RoutedEventArgs e)
+        private void ButtonY_Click(object sender, RoutedEventArgs e) //This is executed when the button O is clicked. The symbol for the first player becomes O.
         {
             for (int i = 1; i <= 3; i++)
             {
@@ -83,7 +83,7 @@ namespace Ultimate_TicTacToe
             StatusBlock.Text = pen + "'s turn";
         }
 
-        public void NullifyAll( )
+        public void NullifyAll( ) //This funtion is used to disable the tap event handler for all the elements.
         {
             for (int i = 1; i <= 3; i++)
                 for (int j = 1; j <= 3; j++)
@@ -106,7 +106,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void Played( int r, int s, int p, int q )
+        public void Played( int r, int s, int p, int q ) //This is function is executed whenever a player plays.
         {
             int sum = p + q;
             if (sum % 4 == 0) //1x3 and 3x1
@@ -354,7 +354,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void Transfer(int r, int s, int p, int q)
+        public void Transfer(int r, int s, int p, int q) //This function is called when the player plays and the control should be transferred to the corresponding grid.
         {
             if (winner[p - 1, q - 1] == 1 || winner[p - 1, q - 1] == 2 || winner[p - 1, q - 1] == 3)
             { 
@@ -370,7 +370,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void Wait(int r, int s, int p, int q)
+        public void Wait(int r, int s, int p, int q) //This function is called when a player leads the next player to an already won spot. When this is called, all the grids which are not won yet will be highlighted.
         {
             NullifyAll();
             for (int i = 1; i <= 3; i++)
@@ -387,7 +387,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void Activate(int p, int q)
+        public void Activate(int p, int q) //This function is called when a player chooses a grid to play. When a player chooses a grid, that grid is 'activated'.
         {
             NullifyAll();
             for (int i = 1; i <= 3; i++)
@@ -396,7 +396,7 @@ namespace Ultimate_TicTacToe
                         ((Windows.UI.Xaml.Controls.TextBlock)this.FindName("TextBlock_" + p + "x" + q + "_" + i + "x" + j)).IsTapEnabled = true;
         }
 
-        public void Won(int r, int s, int p, int q, string pen)
+        public void Won(int r, int s, int p, int q, string pen) //This function is called whenever a player wins in a grid.
         {
             Vacancy--;
             ((Windows.UI.Xaml.Controls.Image)this.FindName("Grid_" + r + "x" + s)).Opacity = 0;
@@ -662,7 +662,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        public void BigWin(int GrandWinner)
+        public void BigWin(int GrandWinner) //This function is called as soon as the player wins the entire game.
         {
             ((Windows.UI.Xaml.Controls.Image)this.FindName("MainGrid")).Opacity = 0;
             for (int i = 1; i <= 3; i++)
@@ -698,7 +698,7 @@ namespace Ultimate_TicTacToe
             ResetButton.Opacity = 1;
         }
 
-        public void NullOpacity()
+        public void NullOpacity() //This function nulls the opacity of the background rectangles. That is, sets them to zero.
         {
             for (int i = 1; i <= 3; i++)
             {
@@ -709,7 +709,7 @@ namespace Ultimate_TicTacToe
             }
         }
 
-        private void Back_1x1_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Back_1x1_Tapped(object sender, TappedRoutedEventArgs e) //This and all the functions below this are event handlers for different elements on the screen.
         {
             NullOpacity();
             Canvas.SetZIndex(Back_1x1, 0);
@@ -881,7 +881,7 @@ namespace Ultimate_TicTacToe
             Transfer(Int32.Parse(r), Int32.Parse(s), 3, 3);
         }
 
-        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        private void ResetButton_Click(object sender, RoutedEventArgs e) //Reset button will appear after the game is over. When it is clicked, the game starts again.
         {
             //var CurrentFrame = Window.Current.Content as Frame;
             //CurrentFrame.Navigate(CurrentFrame.Content.GetType());
@@ -890,7 +890,7 @@ namespace Ultimate_TicTacToe
             Frame.GoBack(); 
         }
 
-        private void CommandInvokedHandler(IUICommand command)
+        private void CommandInvokedHandler(IUICommand command) //Handler of button click event of the below asynchronous prompt.
         {
             //throw new NotImplementedException();
             if (command.Label == "Yes")
@@ -898,7 +898,7 @@ namespace Ultimate_TicTacToe
                 Frame.GoBack();
             }
         }
-        private async void backButton_Click(object sender, RoutedEventArgs e)
+        private async void backButton_Click(object sender, RoutedEventArgs e) //Asynchronous function that pops up a prompt asynchronously, when the user clicks on the back button.
         {
             //Frame.GoBack();
             //Frame.Navigate(typeof(MenuPage));
